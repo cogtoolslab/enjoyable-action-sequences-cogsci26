@@ -1,5 +1,7 @@
 # What makes an action sequence enjoyable to watch?
 
+This work will be presented at CogSci 2026. See the [project page](https://cogtoolslab.github.io/enjoyable-action-sequences-cogsci26/) for an overview.
+
 This repository contains the stimulus-generation code, experiment, and analysis notebooks for our study on what makes action sequences enjoyable to watch. The project uses short Flappy Bird-style gameplay videos as controlled stimuli and asks participants to judge how enjoyable, dangerous, or difficult those trajectories appear.
 
 At a high level, the experiment tests how enjoyment relates to two computationally defined properties of a trajectory:

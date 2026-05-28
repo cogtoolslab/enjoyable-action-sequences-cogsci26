@@ -107,6 +107,16 @@ section p + .danger-layout {
   color: #6f6f77;
 }
 
+.site-footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .links {
   display: flex;
   justify-content: center;
