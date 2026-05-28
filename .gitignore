@@ -1,14 +1,53 @@
-## ignoring by default
+# =============================================================================
+# OS & editor
+# =============================================================================
 .DS_Store
-.ipynb_checkpoints/
-*.md
-!README.md
+.Rhistory
+.Rproj.user
+
+# =============================================================================
+# GitHub Pages site (docs/)
+# =============================================================================
+docs/_build/
+
+# =============================================================================
+# Stimuli generation pipeline
+# =============================================================================
+stimuli/generation_pipeline/outputs/**
+!stimuli/generation_pipeline/outputs/**/
+!stimuli/generation_pipeline/outputs/**/*.csv
+!stimuli/generation_pipeline/outputs/**/*.json
+!stimuli/generation_pipeline/outputs/**/*.pdf
+stimuli/generation_pipeline/outputs/trajectory_example.json
+
+stimuli/generation_pipeline/00_website_score_danger.py
+stimuli/generation_pipeline/00_website_score_difficulty.py
+
+# =============================================================================
+# Media (videos, images)
+# =============================================================================
+/videos
+*.mp4
+!docs/assets/example_danger.mp4
+!docs/assets/example_difficulty.mp4
+
 *.jpeg
 *.jpg
 *.tiff
 *.svg
 *.eps
 *.ai
+
+# =============================================================================
+# Documentation
+# =============================================================================
+*.md
+!README.md
+/site
+
+# =============================================================================
+# LaTeX build artifacts
+# =============================================================================
 *.aux
 *.bbl
 *.blg
@@ -18,50 +57,32 @@
 *.log
 *.lot
 *.out
-*.toc
 *.synctex.gz
-*.key
+*.toc
+
+# =============================================================================
+# Data & secrets
+# =============================================================================
 *.h5
 *.npy
+*.key
 auth.json
 auth.txt
-node_modules/
 features/
-.Rproj.user
 
-# Byte-compiled / optimized / DLL files
+# =============================================================================
+# Node
+# =============================================================================
+node_modules/
+
+# =============================================================================
+# Python
+# =============================================================================
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-*.lof
-*.lot
-*.out
-.DS_Store
-.Rhistory
-*.fdb_latexmk
-*.bbl
-*.aux
-*.blg
-*.fls
-*.log
-*.synctex.gz
-
-.DS_Store
-*.jpeg
-*.jpg
-*.tiff
-*.svg
-*.eps
-*.ai
-auth.json
-auth.txt
-
-
-# Distribution / packaging
+*.sage.py
 .Python
 build/
 develop-eggs/
@@ -79,18 +100,10 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
-# Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
-
-# Unit test / coverage reports
 htmlcov/
 .tox/
 .coverage
@@ -101,42 +114,16 @@ coverage.xml
 *.cover
 .hypothesis/
 .pytest_cache/
-
-# Translations
 *.mo
 *.pot
-
-# Django stuff:
-*.log
 local_settings.py
 db.sqlite3
-
-# Flask stuff:
 instance/
 .webassets-cache
-
-# Scrapy stuff:
 .scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
 target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
 .python-version
-
-# celery beat schedule file
 celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
 .env
 .venv
 env/
@@ -144,31 +131,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-# Spyder project settings
 .spyderproject
 .spyproject
-
-# Rope project settings
 .ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
 .mypy_cache/
 
-
-/videos
-*.mp4
-!docs/assets/**/*.mp4
-
-stimuli/generation_pipeline/outputs/**
-!stimuli/generation_pipeline/outputs/**/
-!stimuli/generation_pipeline/outputs/**/*.csv
-!stimuli/generation_pipeline/outputs/**/*.json
-!stimuli/generation_pipeline/outputs/**/*.pdf
-stimuli/generation_pipeline/outputs/trajectory_example.json
-
-stimuli/generation_pipeline/00_website_score_danger.py
-stimuli/generation_pipeline/00_website_score_difficulty.py
+# =============================================================================
+# Jupyter
+# =============================================================================
+.ipynb_checkpoints/
