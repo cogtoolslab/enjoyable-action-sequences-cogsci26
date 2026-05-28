@@ -5,7 +5,7 @@ This repository contains the stimulus-generation code, experiment, and analysis 
 At a high level, the experiment tests how enjoyment relates to two computationally defined properties of a trajectory:
 
 - `dangerousness`: how close the observed path comes to failure or risky states.
-- `difficulty`: how hard the same map is for trained agents to complete.
+- `map difficulty`: how hard a map is for agents to complete.
 
 ## Repo Structure
 
