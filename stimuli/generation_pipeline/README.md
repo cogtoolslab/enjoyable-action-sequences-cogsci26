@@ -28,7 +28,7 @@ Then activate it:
 conda activate flappy
 ```
 
-## Folder Layout
+## Folder Organization
 
 ```text
 stimuli/generation_pipeline/
