@@ -1,0 +1,40 @@
+/* Custom styles for vertical centering */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#jspsych-target {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Center content within jsPsych trials */
+.jspsych-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.jspsych-content {
+    max-width: 95%;
+    text-align: center;
+}
+
+/* Limit text width for better readability */
+.instruction-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+

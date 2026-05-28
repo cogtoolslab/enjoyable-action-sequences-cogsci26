@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Game footage experiment</title>
+  <link rel="shortcut icon" href="#">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta charset="UTF-8">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/jspsych.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- jsPsych core -->
+  <script src="js/jspsych/jspsych.js"></script>
+  
+  <!-- jsPsych plugins -->
+  <script src="js/jspsych/default_plugins/plugin-preload.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-fullscreen.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-instructions.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-browser-check.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-html-slider-response.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-html-button-response.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-video-button-response.js"></script>
+  <script src="js/jspsych/default_plugins/plugin-survey-html-form.js"></script>
+
+  <!-- Utility functions -->
+  <script type="text/javascript" src="js/utils/lodash.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/utils/utils.js"></script>
+
+  <!-- Experiment setup -->
+  <script src="js/game_settings.js"></script>
+  <script src="js/setup.js"></script>
+
+  <script type="text/javascript">
+    let socket = io.connect();
+    window.onbeforeunload = function () {
+      return "Please do not refresh the page or go back, changes you made may not be saved!";
+    }
+    window.onload = function () {
+      setupGame();
+    }
+  </script>
+
+</head>
+<!-- 
+<body>
+  <div id="jspsych-target"></div>
+</body> -->
+
+</html>

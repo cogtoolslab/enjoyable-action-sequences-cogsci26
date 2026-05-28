@@ -1,0 +1,22 @@
+{
+  "name": "watch-and-rate-experiment",
+  "version": "1.0.0",
+  "description": "Node server and MongoDB store for the watch-and-rate experiment.",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start:app": "node app.js",
+    "start:store": "node store.js",
+    "check": "node --check app.js && node --check store.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "colors": "^1.4.0",
+    "express": "^4.21.2",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.8",
+    "mongodb": "^2.2.36",
+    "request": "^2.88.2",
+    "socket.io": "^4.8.1"
+  }
+}
