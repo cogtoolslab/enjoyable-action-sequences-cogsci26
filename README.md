@@ -17,7 +17,7 @@ The workflow has three main parts:
 2. Run a web-based watch-and-rate experiment in which participants view short gameplay videos, provide slider ratings, make pairwise comparisons, and complete an exit survey.
 3. Analyze the data (perceived enjoyment, dangerousness, and difficulty) and relate those judgments to the computational stimulus scores reported in the paper.
 
-## Repository Layout
+## Repo
 
 - `stimuli/`: stimulus construction, upload notebooks, and the Flappy Bird stimulus-generation pipeline.
 - `stimuli/generation_pipeline/`: scripts for recording trajectories, generating maps, scoring dangerousness and difficulty, selecting stimuli, and rendering videos.
