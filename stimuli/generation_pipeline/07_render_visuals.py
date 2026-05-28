@@ -165,8 +165,9 @@ def render_video_from_recording(
     output_path: str | Path,
     fps: int = DEFAULT_FPS,
     bird_sprite_name: str = DEFAULT_BIRD_SPRITE,
+    include_overlays: bool = True,
 ) -> None:
-    """Render a recording dictionary as an MP4 with countdown and end overlays."""
+    """Render a recording dictionary as an MP4."""
     episode = recording.get("episode_data", [])
     if not episode:
         print(f"Warning: Empty trajectory, skipping video generation for {output_path}")
@@ -184,27 +185,29 @@ def render_video_from_recording(
     )
 
     try:
-        first_frame = _frame_to_bgr(renderer.render_frame(episode[0]))
-        for countdown_num in (3, 2, 1):
-            _write_logo_overlay(
-                writer,
-                first_frame,
-                ASSETS_DIR / f"{countdown_num}.png",
-                fps,
-                background_alpha=0.4,
-            )
+        if include_overlays:
+            first_frame = _frame_to_bgr(renderer.render_frame(episode[0]))
+            for countdown_num in (3, 2, 1):
+                _write_logo_overlay(
+                    writer,
+                    first_frame,
+                    ASSETS_DIR / f"{countdown_num}.png",
+                    fps,
+                    background_alpha=0.4,
+                )
 
         for step_data in episode:
             writer.write(_frame_to_bgr(renderer.render_frame(step_data)))
 
-        last_frame = _frame_to_bgr(renderer.render_frame(episode[-1]))
-        _write_logo_overlay(
-            writer,
-            last_frame,
-            ASSETS_DIR / "end.png",
-            fps,
-            background_alpha=0.5,
-        )
+        if include_overlays:
+            last_frame = _frame_to_bgr(renderer.render_frame(episode[-1]))
+            _write_logo_overlay(
+                writer,
+                last_frame,
+                ASSETS_DIR / "end.png",
+                fps,
+                background_alpha=0.5,
+            )
     finally:
         writer.release()
 
@@ -223,6 +226,7 @@ def generate_videos_from_trajectories(
     fps: int = DEFAULT_FPS,
     bird_sprite: Optional[str] = None,
     filename_suffix: Optional[str] = None,
+    include_overlays: bool = True,
 ) -> List[str]:
     """Generate videos for trajectory JSON paths and return the output paths."""
     output_dir_path = Path(output_dir)
@@ -245,7 +249,13 @@ def generate_videos_from_trajectories(
             output_path = output_dir_path / f"{trajectory_path.stem}{suffix}.mp4"
 
             print(f"  Rendering video with sprite: {sprite_name}")
-            render_video_from_recording(recording, output_path, fps=fps, bird_sprite_name=sprite_name)
+            render_video_from_recording(
+                recording,
+                output_path,
+                fps=fps,
+                bird_sprite_name=sprite_name,
+                include_overlays=include_overlays,
+            )
 
             generated_videos.append(str(output_path))
             print(f"  Generated: {output_path}")
@@ -695,6 +705,7 @@ def _add_video_parser(subparsers: argparse._SubParsersAction) -> None:
     parser.add_argument("--output-dir", default=str(DEFAULT_VIDEO_OUTPUT_DIR), help="Directory for generated videos.")
     parser.add_argument("--fps", type=int, default=DEFAULT_FPS, help="Frames per second.")
     parser.add_argument("--bird-sprite", default=DEFAULT_BIRD_SPRITE, help="Bird sprite filename from assets/.")
+    parser.add_argument("--no-overlays", action="store_true", help="Skip countdown and final overlay frames.")
 
 
 def _add_visualize_parser(subparsers: argparse._SubParsersAction) -> None:
@@ -724,6 +735,7 @@ def main() -> None:
             fps=args.fps,
             bird_sprite=args.bird_sprite,
             filename_suffix=None,
+            include_overlays=not args.no_overlays,
         )
         return
 
