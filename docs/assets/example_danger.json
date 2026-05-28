@@ -1,0 +1,4659 @@
+{
+  "input_file": "/Users/jeanpeic/Cog/enjoyable-action-sequences-cogsci26/stimuli/generation_pipeline/outputs/trajectory_example.json",
+  "models": [
+    "value_ppo_mr_2_1_on_10_optimal_value.pth",
+    "value_ppo_mr_3_1.5_on_15_optimal_value.pth",
+    "value_ppo_mr_5_2_on_20_optimal_value.pth"
+  ],
+  "score_aggregation": "mean_across_models",
+  "total_states": 273,
+  "danger_by_state": {
+    "0": {
+      "step": 0,
+      "game_state": [
+        0.6071428571428571,
+        -0.065,
+        1.1333333333333333,
+        0.255,
+        0.5283333333333333,
+        0.0
+      ],
+      "danger_score": 0.08540020386377971,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007771670818328857,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03949785232543945,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2089310884475708
+      }
+    },
+    "1": {
+      "step": 1,
+      "game_state": [
+        0.5714285714285714,
+        -0.09666666666666666,
+        1.2666666666666666,
+        0.22333333333333333,
+        0.56,
+        0.0
+      ],
+      "danger_score": 0.1518171230951945,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.05452752113342285,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.13808739185333252,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2628364562988281
+      }
+    },
+    "2": {
+      "step": 2,
+      "game_state": [
+        0.5357142857142857,
+        -0.13166666666666665,
+        1.4,
+        0.18833333333333332,
+        0.595,
+        0.0
+      ],
+      "danger_score": 0.2661558985710144,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.1340457797050476,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.3231053948402405,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.3413165211677551
+      }
+    },
+    "3": {
+      "step": 3,
+      "game_state": [
+        0.5,
+        -0.17,
+        1.5333333333333334,
+        0.15,
+        0.6333333333333333,
+        0.0
+      ],
+      "danger_score": 0.420565128326416,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.22224974632263184,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.5639731287956238,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.47547250986099243
+      }
+    },
+    "4": {
+      "step": 4,
+      "game_state": [
+        0.4642857142857143,
+        -0.14833333333333334,
+        -0.8666666666666667,
+        0.17166666666666666,
+        0.6116666666666667,
+        0.0
+      ],
+      "danger_score": 0.0071583787600199384,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0026161670684814453,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.004218935966491699,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02831023931503296
+      }
+    },
+    "5": {
+      "step": 5,
+      "game_state": [
+        0.42857142857142855,
+        -0.13,
+        -0.7333333333333333,
+        0.19,
+        0.5933333333333334,
+        0.0
+      ],
+      "danger_score": 0.022910515467325848,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0020678043365478516,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012337803840637207,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05432593822479248
+      }
+    },
+    "6": {
+      "step": 6,
+      "game_state": [
+        0.39285714285714285,
+        -0.115,
+        -0.6,
+        0.205,
+        0.5783333333333334,
+        0.0
+      ],
+      "danger_score": 0.04429598649342855,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.024805665016174316,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04468989372253418,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06339240074157715
+      }
+    },
+    "7": {
+      "step": 7,
+      "game_state": [
+        0.35714285714285715,
+        -0.10333333333333333,
+        -0.4666666666666667,
+        0.21666666666666667,
+        0.5666666666666667,
+        0.0
+      ],
+      "danger_score": 0.052142580350240074,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.05434525012969971,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04414200782775879,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05794048309326172
+      }
+    },
+    "8": {
+      "step": 8,
+      "game_state": [
+        0.32142857142857145,
+        -0.08166666666666667,
+        -0.8666666666666667,
+        0.23833333333333334,
+        0.545,
+        0.0
+      ],
+      "danger_score": 0.01737062136332194,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.001001119613647461,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.007783830165863037,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.045329153537750244
+      }
+    },
+    "9": {
+      "step": 9,
+      "game_state": [
+        0.2857142857142857,
+        -0.06333333333333334,
+        -0.7333333333333333,
+        0.25666666666666665,
+        0.5266666666666666,
+        0.0
+      ],
+      "danger_score": 0.0208929181098938,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0008864402770996094,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0063321590423583984,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05546015501022339
+      }
+    },
+    "10": {
+      "step": 10,
+      "game_state": [
+        0.25,
+        -0.04833333333333333,
+        -0.6,
+        0.27166666666666667,
+        0.5116666666666667,
+        0.0
+      ],
+      "danger_score": 0.009848554929097494,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005164086818695068,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.018763184547424316,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04314476251602173
+      }
+    },
+    "11": {
+      "step": 11,
+      "game_state": [
+        0.21428571428571427,
+        -0.03666666666666667,
+        -0.4666666666666667,
+        0.2833333333333333,
+        0.5,
+        0.0
+      ],
+      "danger_score": 0.00882411003112793,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.01047205924987793,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0066384077072143555,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.022638678550720215
+      }
+    },
+    "12": {
+      "step": 12,
+      "game_state": [
+        0.17857142857142858,
+        -0.028333333333333332,
+        -0.3333333333333333,
+        0.2916666666666667,
+        0.49166666666666664,
+        0.0
+      ],
+      "danger_score": 0.013363579909006754,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.018604934215545654,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0016901493072509766,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.019795656204223633
+      }
+    },
+    "13": {
+      "step": 13,
+      "game_state": [
+        0.14285714285714285,
+        -0.023333333333333334,
+        -0.2,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.044628401597340904,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.029956936836242676,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016704857349395752,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08722341060638428
+      }
+    },
+    "14": {
+      "step": 14,
+      "game_state": [
+        0.10714285714285714,
+        -0.021666666666666667,
+        -0.06666666666666667,
+        0.29833333333333334,
+        0.485,
+        0.0
+      ],
+      "danger_score": 0.0701257586479187,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.012307047843933105,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.017542362213134766,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.18052786588668823
+      }
+    },
+    "15": {
+      "step": 15,
+      "game_state": [
+        0.07142857142857142,
+        -0.023333333333333334,
+        0.06666666666666667,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.11415259043375652,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00335085391998291,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.06462156772613525,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.27448534965515137
+      }
+    },
+    "16": {
+      "step": 16,
+      "game_state": [
+        0.03571428571428571,
+        -0.0016666666666666668,
+        -0.8666666666666667,
+        0.31833333333333336,
+        0.465,
+        0.0
+      ],
+      "danger_score": 0.03645855188369751,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009527623653411865,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05503237247467041,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.044815659523010254
+      }
+    },
+    "17": {
+      "step": 17,
+      "game_state": [
+        0.0,
+        0.016666666666666666,
+        -0.7333333333333333,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.02846890687942505,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0075119733810424805,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.035752296447753906,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04214245080947876
+      }
+    },
+    "18": {
+      "step": 18,
+      "game_state": [
+        -0.03571428571428571,
+        0.03166666666666667,
+        -0.6,
+        0.3516666666666667,
+        0.43166666666666664,
+        0.0
+      ],
+      "danger_score": 0.010069886843363443,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0007323622703552246,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.010721564292907715,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.018755733966827393
+      }
+    },
+    "19": {
+      "step": 19,
+      "game_state": [
+        -0.07142857142857142,
+        0.043333333333333335,
+        -0.4666666666666667,
+        0.36333333333333334,
+        0.42,
+        0.0
+      ],
+      "danger_score": 0.006639460722605388,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.010084033012390137,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01307135820388794,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01693105697631836
+      }
+    },
+    "20": {
+      "step": 20,
+      "game_state": [
+        -0.10714285714285714,
+        0.051666666666666666,
+        -0.3333333333333333,
+        0.37166666666666665,
+        0.4116666666666667,
+        0.0
+      ],
+      "danger_score": 0.012638171513875326,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0015357732772827148,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01885068416595459,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0205996036529541
+      }
+    },
+    "21": {
+      "step": 21,
+      "game_state": [
+        -0.14285714285714285,
+        0.056666666666666664,
+        -0.2,
+        0.37666666666666665,
+        0.4066666666666667,
+        0.0
+      ],
+      "danger_score": 0.016362448533376057,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011245369911193848,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.004773974418640137,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03306800127029419
+      }
+    },
+    "22": {
+      "step": 22,
+      "game_state": [
+        -0.17857142857142858,
+        0.058333333333333334,
+        -0.06666666666666667,
+        0.37833333333333335,
+        0.405,
+        0.0
+      ],
+      "danger_score": 0.02673385540644328,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009798824787139893,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0220644474029541,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04833829402923584
+      }
+    },
+    "23": {
+      "step": 23,
+      "game_state": [
+        -0.21428571428571427,
+        0.056666666666666664,
+        0.06666666666666667,
+        0.37666666666666665,
+        0.4066666666666667,
+        0.0
+      ],
+      "danger_score": 0.029744048913319904,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.013308286666870117,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01586240530014038,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06006145477294922
+      }
+    },
+    "24": {
+      "step": 24,
+      "game_state": [
+        -0.25,
+        0.051666666666666666,
+        0.2,
+        0.37166666666666665,
+        0.4116666666666667,
+        0.0
+      ],
+      "danger_score": 0.02352758248647054,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0003191232681274414,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.013370692729949951,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05689293146133423
+      }
+    },
+    "25": {
+      "step": 25,
+      "game_state": [
+        0.7142857142857143,
+        0.09,
+        0.3333333333333333,
+        0.36333333333333334,
+        0.42,
+        0.0
+      ],
+      "danger_score": 0.011472622553507486,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0006026029586791992,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016444146633148193,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.018576323986053467
+      }
+    },
+    "26": {
+      "step": 26,
+      "game_state": [
+        0.6785714285714286,
+        0.07833333333333334,
+        0.4666666666666667,
+        0.3516666666666667,
+        0.43166666666666664,
+        0.0
+      ],
+      "danger_score": 0.008738418420155844,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004315376281738281,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012645602226257324,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.009254276752471924
+      }
+    },
+    "27": {
+      "step": 27,
+      "game_state": [
+        0.6428571428571429,
+        0.06333333333333334,
+        0.6,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.016385455926259358,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0018442869186401367,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012042760848999023,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03895789384841919
+      }
+    },
+    "28": {
+      "step": 28,
+      "game_state": [
+        0.6071428571428571,
+        0.045,
+        0.7333333333333333,
+        0.31833333333333336,
+        0.465,
+        0.0
+      ],
+      "danger_score": 0.020540157953898113,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007320761680603027,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0065950751304626465,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04770463705062866
+      }
+    },
+    "29": {
+      "step": 29,
+      "game_state": [
+        0.5714285714285714,
+        0.023333333333333334,
+        0.8666666666666667,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.04312598705291748,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006676614284515381,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016710221767425537,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10599112510681152
+      }
+    },
+    "30": {
+      "step": 30,
+      "game_state": [
+        0.5357142857142857,
+        -0.0016666666666666668,
+        1.0,
+        0.27166666666666667,
+        0.5116666666666667,
+        0.0
+      ],
+      "danger_score": 0.0743831992149353,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0052928924560546875,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03264516592025757,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.18521153926849365
+      }
+    },
+    "31": {
+      "step": 31,
+      "game_state": [
+        0.5,
+        -0.03,
+        1.1333333333333333,
+        0.24333333333333335,
+        0.54,
+        0.0
+      ],
+      "danger_score": 0.09866070747375488,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005116581916809082,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.06390070915222168,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2269648313522339
+      }
+    },
+    "32": {
+      "step": 32,
+      "game_state": [
+        0.4642857142857143,
+        -0.06166666666666667,
+        1.2666666666666666,
+        0.21166666666666667,
+        0.5716666666666667,
+        0.0
+      ],
+      "danger_score": 0.17542741696039835,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.053917109966278076,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.19797855615615845,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.27438658475875854
+      }
+    },
+    "33": {
+      "step": 33,
+      "game_state": [
+        0.42857142857142855,
+        -0.09666666666666666,
+        1.4,
+        0.17666666666666667,
+        0.6066666666666667,
+        0.0
+      ],
+      "danger_score": 0.2986929217974345,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.1347464919090271,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.40332067012786865,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.3580116033554077
+      }
+    },
+    "34": {
+      "step": 34,
+      "game_state": [
+        0.39285714285714285,
+        -0.135,
+        1.5333333333333334,
+        0.13833333333333334,
+        0.645,
+        0.0
+      ],
+      "danger_score": 0.4507194459438324,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.21330976486206055,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.6605004966259003,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.4783480763435364
+      }
+    },
+    "35": {
+      "step": 35,
+      "game_state": [
+        0.35714285714285715,
+        -0.11333333333333333,
+        -0.8666666666666667,
+        0.16,
+        0.6233333333333333,
+        0.0
+      ],
+      "danger_score": 0.023890475432078045,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.003282308578491211,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.010905206203460693,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06404852867126465
+      }
+    },
+    "36": {
+      "step": 36,
+      "game_state": [
+        0.32142857142857145,
+        -0.095,
+        -0.7333333333333333,
+        0.17833333333333334,
+        0.605,
+        0.0
+      ],
+      "danger_score": 0.033576130867004395,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.003474116325378418,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.028599858283996582,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06865441799163818
+      }
+    },
+    "37": {
+      "step": 37,
+      "game_state": [
+        0.2857142857142857,
+        -0.08,
+        -0.6,
+        0.19333333333333333,
+        0.59,
+        0.0
+      ],
+      "danger_score": 0.03273467222849528,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007247567176818848,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.022544145584106445,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06841230392456055
+      }
+    },
+    "38": {
+      "step": 38,
+      "game_state": [
+        0.25,
+        -0.06833333333333333,
+        -0.4666666666666667,
+        0.205,
+        0.5783333333333334,
+        0.0
+      ],
+      "danger_score": 0.03846180438995361,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.02263486385345459,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04130196571350098,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05144858360290527
+      }
+    },
+    "39": {
+      "step": 39,
+      "game_state": [
+        0.21428571428571427,
+        -0.06,
+        -0.3333333333333333,
+        0.21333333333333335,
+        0.57,
+        0.0
+      ],
+      "danger_score": 0.052249252796173096,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.04156756401062012,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.049725890159606934,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06545430421829224
+      }
+    },
+    "40": {
+      "step": 40,
+      "game_state": [
+        0.17857142857142858,
+        -0.055,
+        -0.2,
+        0.21833333333333332,
+        0.565,
+        0.0
+      ],
+      "danger_score": 0.0752220352490743,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.05307644605636597,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05515974760055542,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.11742991209030151
+      }
+    },
+    "41": {
+      "step": 41,
+      "game_state": [
+        0.14285714285714285,
+        -0.03333333333333333,
+        -0.8666666666666667,
+        0.24,
+        0.5433333333333333,
+        0.0
+      ],
+      "danger_score": 0.035422841707865395,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.005174875259399414,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.038161635398864746,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07328176498413086
+      }
+    },
+    "42": {
+      "step": 42,
+      "game_state": [
+        0.10714285714285714,
+        -0.015,
+        -0.7333333333333333,
+        0.25833333333333336,
+        0.525,
+        0.0
+      ],
+      "danger_score": 0.024715423583984375,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0031555891036987305,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.022022128105163574,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05527973175048828
+      }
+    },
+    "43": {
+      "step": 43,
+      "game_state": [
+        0.07142857142857142,
+        0.0,
+        -0.6,
+        0.2733333333333333,
+        0.51,
+        0.0
+      ],
+      "danger_score": 0.026034434636433918,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009171605110168457,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01999765634536743,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04893404245376587
+      }
+    },
+    "44": {
+      "step": 44,
+      "game_state": [
+        0.03571428571428571,
+        0.011666666666666667,
+        -0.4666666666666667,
+        0.285,
+        0.49833333333333335,
+        0.0
+      ],
+      "danger_score": 0.03825259208679199,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0035579800605773926,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.023634135723114014,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08756566047668457
+      }
+    },
+    "45": {
+      "step": 45,
+      "game_state": [
+        0.0,
+        0.02,
+        -0.3333333333333333,
+        0.29333333333333333,
+        0.49,
+        0.0
+      ],
+      "danger_score": 0.035594562689463295,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.003717660903930664,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03011476993560791,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07295125722885132
+      }
+    },
+    "46": {
+      "step": 46,
+      "game_state": [
+        -0.03571428571428571,
+        0.025,
+        -0.2,
+        0.29833333333333334,
+        0.485,
+        0.0
+      ],
+      "danger_score": 0.033835271994272866,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0002551078796386719,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03167515993118286,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06957554817199707
+      }
+    },
+    "47": {
+      "step": 47,
+      "game_state": [
+        -0.07142857142857142,
+        0.02666666666666667,
+        -0.06666666666666667,
+        0.3,
+        0.48333333333333334,
+        0.0
+      ],
+      "danger_score": 0.040593485037485756,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0034737586975097656,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04830557107925415,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07694864273071289
+      }
+    },
+    "48": {
+      "step": 48,
+      "game_state": [
+        -0.10714285714285714,
+        0.025,
+        0.06666666666666667,
+        0.29833333333333334,
+        0.485,
+        0.0
+      ],
+      "danger_score": 0.04986522595087687,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0010764598846435547,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.040959060192108154,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10971307754516602
+      }
+    },
+    "49": {
+      "step": 49,
+      "game_state": [
+        -0.14285714285714285,
+        0.02,
+        0.2,
+        0.29333333333333333,
+        0.49,
+        0.0
+      ],
+      "danger_score": 0.07823326190312703,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.022793352603912354,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.07840824127197266,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1334981918334961
+      }
+    },
+    "50": {
+      "step": 50,
+      "game_state": [
+        -0.17857142857142858,
+        0.011666666666666667,
+        0.3333333333333333,
+        0.285,
+        0.49833333333333335,
+        0.0
+      ],
+      "danger_score": 0.1068883736928304,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.03313261270523071,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.1419079303741455,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.145624577999115
+      }
+    },
+    "51": {
+      "step": 51,
+      "game_state": [
+        -0.21428571428571427,
+        0.0,
+        0.4666666666666667,
+        0.2733333333333333,
+        0.51,
+        0.0
+      ],
+      "danger_score": 0.14386572440465292,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.039964377880096436,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.2142500877380371,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1773827075958252
+      }
+    },
+    "52": {
+      "step": 52,
+      "game_state": [
+        -0.25,
+        0.021666666666666667,
+        -0.8666666666666667,
+        0.295,
+        0.48833333333333334,
+        0.0
+      ],
+      "danger_score": 0.011318067709604899,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.01511538028717041,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009763836860656738,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.009074985980987549
+      }
+    },
+    "53": {
+      "step": 53,
+      "game_state": [
+        0.7142857142857143,
+        0.135,
+        -0.7333333333333333,
+        0.31333333333333335,
+        0.47,
+        0.0
+      ],
+      "danger_score": 0.014030555884043375,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008143901824951172,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.015698611736297607,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.018249154090881348
+      }
+    },
+    "54": {
+      "step": 54,
+      "game_state": [
+        0.6785714285714286,
+        0.15,
+        -0.6,
+        0.3283333333333333,
+        0.455,
+        0.0
+      ],
+      "danger_score": 0.012660165627797445,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00882786512374878,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.018998682498931885,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01015394926071167
+      }
+    },
+    "55": {
+      "step": 55,
+      "game_state": [
+        0.6428571428571429,
+        0.16166666666666665,
+        -0.4666666666666667,
+        0.34,
+        0.44333333333333336,
+        0.0
+      ],
+      "danger_score": 0.01692575216293335,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0050356388092041016,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.025464534759521484,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.020277082920074463
+      }
+    },
+    "56": {
+      "step": 56,
+      "game_state": [
+        0.6071428571428571,
+        0.17,
+        -0.3333333333333333,
+        0.34833333333333333,
+        0.435,
+        0.0
+      ],
+      "danger_score": 0.01873938242594401,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.003879547119140625,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.023504257202148438,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02883434295654297
+      }
+    },
+    "57": {
+      "step": 57,
+      "game_state": [
+        0.5714285714285714,
+        0.175,
+        -0.2,
+        0.35333333333333333,
+        0.43,
+        0.0
+      ],
+      "danger_score": 0.015011111895243326,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0021469593048095703,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.021115660667419434,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.021770715713500977
+      }
+    },
+    "58": {
+      "step": 58,
+      "game_state": [
+        0.5357142857142857,
+        0.17666666666666667,
+        -0.06666666666666667,
+        0.355,
+        0.42833333333333334,
+        0.0
+      ],
+      "danger_score": 0.016253153483072918,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.002641916275024414,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.024203062057495117,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02191448211669922
+      }
+    },
+    "59": {
+      "step": 59,
+      "game_state": [
+        0.5,
+        0.175,
+        0.06666666666666667,
+        0.35333333333333333,
+        0.43,
+        0.0
+      ],
+      "danger_score": 0.021088123321533203,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008922815322875977,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01185697317123413,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0424845814704895
+      }
+    },
+    "60": {
+      "step": 60,
+      "game_state": [
+        0.4642857142857143,
+        0.17,
+        0.2,
+        0.34833333333333333,
+        0.435,
+        0.0
+      ],
+      "danger_score": 0.020602107048034668,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009557068347930908,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016345620155334473,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03590363264083862
+      }
+    },
+    "61": {
+      "step": 61,
+      "game_state": [
+        0.42857142857142855,
+        0.16166666666666665,
+        0.3333333333333333,
+        0.34,
+        0.44333333333333336,
+        0.0
+      ],
+      "danger_score": 0.02977875868479411,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006992220878601074,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.028119206428527832,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05422484874725342
+      }
+    },
+    "62": {
+      "step": 62,
+      "game_state": [
+        0.39285714285714285,
+        0.15,
+        0.4666666666666667,
+        0.3283333333333333,
+        0.455,
+        0.0
+      ],
+      "danger_score": 0.03863342603047689,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009052157402038574,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02860116958618164,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07824695110321045
+      }
+    },
+    "63": {
+      "step": 63,
+      "game_state": [
+        0.35714285714285715,
+        0.135,
+        0.6,
+        0.31333333333333335,
+        0.47,
+        0.0
+      ],
+      "danger_score": 0.03177086512247721,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0053444504737854,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016670584678649902,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07329756021499634
+      }
+    },
+    "64": {
+      "step": 64,
+      "game_state": [
+        0.32142857142857145,
+        0.11666666666666667,
+        0.7333333333333333,
+        0.295,
+        0.48833333333333334,
+        0.0
+      ],
+      "danger_score": 0.05181203285853068,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005510807037353516,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03277146816253662,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1171538233757019
+      }
+    },
+    "65": {
+      "step": 65,
+      "game_state": [
+        0.2857142857142857,
+        0.095,
+        0.8666666666666667,
+        0.2733333333333333,
+        0.51,
+        0.0
+      ],
+      "danger_score": 0.07620881001154582,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0031864047050476074,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04326432943344116,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.18217569589614868
+      }
+    },
+    "66": {
+      "step": 66,
+      "game_state": [
+        0.25,
+        0.07,
+        1.0,
+        0.24833333333333332,
+        0.535,
+        0.0
+      ],
+      "danger_score": 0.10120872656504314,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004076957702636719,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.08221018314361572,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.21733903884887695
+      }
+    },
+    "67": {
+      "step": 67,
+      "game_state": [
+        0.21428571428571427,
+        0.041666666666666664,
+        1.1333333333333333,
+        0.22,
+        0.5633333333333334,
+        0.0
+      ],
+      "danger_score": 0.1768577297528585,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.03622114658355713,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.2359689474105835,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2583830952644348
+      }
+    },
+    "68": {
+      "step": 68,
+      "game_state": [
+        0.17857142857142858,
+        0.01,
+        1.2666666666666666,
+        0.18833333333333332,
+        0.595,
+        0.0
+      ],
+      "danger_score": 0.2948575019836426,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.06669121980667114,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.48679476976394653,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.33108651638031006
+      }
+    },
+    "69": {
+      "step": 69,
+      "game_state": [
+        0.14285714285714285,
+        -0.025,
+        1.4,
+        0.15333333333333332,
+        0.63,
+        0.0
+      ],
+      "danger_score": 0.4207073549429576,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.11449563503265381,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.7166795432567596,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.43094688653945923
+      }
+    },
+    "70": {
+      "step": 70,
+      "game_state": [
+        0.10714285714285714,
+        -0.06333333333333334,
+        1.5333333333333334,
+        0.115,
+        0.6683333333333333,
+        0.0
+      ],
+      "danger_score": 0.5373873437444369,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.1752074956893921,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.9045719876885414,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.5323825478553772
+      }
+    },
+    "71": {
+      "step": 71,
+      "game_state": [
+        0.07142857142857142,
+        -0.041666666666666664,
+        -0.8666666666666667,
+        0.13666666666666666,
+        0.6466666666666666,
+        0.0
+      ],
+      "danger_score": 0.24522449572881064,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.13184595108032227,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.26682454347610474,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.3370029926300049
+      }
+    },
+    "72": {
+      "step": 72,
+      "game_state": [
+        0.03571428571428571,
+        -0.023333333333333334,
+        -0.7333333333333333,
+        0.155,
+        0.6283333333333333,
+        0.0
+      ],
+      "danger_score": 0.15932345390319824,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.04123944044113159,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.14281946420669556,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2939114570617676
+      }
+    },
+    "73": {
+      "step": 73,
+      "game_state": [
+        0.0,
+        -0.008333333333333333,
+        -0.6,
+        0.17,
+        0.6133333333333333,
+        0.0
+      ],
+      "danger_score": 0.0826567014058431,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.024493515491485596,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05934351682662964,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.16413307189941406
+      }
+    },
+    "74": {
+      "step": 74,
+      "game_state": [
+        -0.03571428571428571,
+        0.0033333333333333335,
+        -0.4666666666666667,
+        0.18166666666666667,
+        0.6016666666666667,
+        0.0
+      ],
+      "danger_score": 0.05157158772150675,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008880436420440674,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05605757236480713,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08977675437927246
+      }
+    },
+    "75": {
+      "step": 75,
+      "game_state": [
+        -0.07142857142857142,
+        0.011666666666666667,
+        -0.3333333333333333,
+        0.19,
+        0.5933333333333334,
+        0.0
+      ],
+      "danger_score": 0.0358277161916097,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.020094454288482666,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03394174575805664,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.053446948528289795
+      }
+    },
+    "76": {
+      "step": 76,
+      "game_state": [
+        -0.10714285714285714,
+        0.016666666666666666,
+        -0.2,
+        0.195,
+        0.5883333333333334,
+        0.0
+      ],
+      "danger_score": 0.046241939067840576,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.030549287796020508,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03856492042541504,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06961160898208618
+      }
+    },
+    "77": {
+      "step": 77,
+      "game_state": [
+        -0.14285714285714285,
+        0.018333333333333333,
+        -0.06666666666666667,
+        0.19666666666666666,
+        0.5866666666666667,
+        0.0
+      ],
+      "danger_score": 0.046614646911621094,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.007577419281005859,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03465306758880615,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.11276829242706299
+      }
+    },
+    "78": {
+      "step": 78,
+      "game_state": [
+        -0.17857142857142858,
+        0.04,
+        -0.8666666666666667,
+        0.21833333333333332,
+        0.565,
+        0.0
+      ],
+      "danger_score": 0.007893661657969156,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.001180410385131836,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0062264204025268555,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01863497495651245
+      }
+    },
+    "79": {
+      "step": 79,
+      "game_state": [
+        -0.21428571428571427,
+        0.058333333333333334,
+        -0.7333333333333333,
+        0.23666666666666666,
+        0.5466666666666666,
+        0.0
+      ],
+      "danger_score": -0.00024312734603881836,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0054318904876708984,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0243452787399292,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.018184006214141846
+      }
+    },
+    "80": {
+      "step": 80,
+      "game_state": [
+        -0.25,
+        0.07333333333333333,
+        -0.6,
+        0.25166666666666665,
+        0.5316666666666666,
+        0.0
+      ],
+      "danger_score": 0.008932352066040039,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011228442192077637,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.010375499725341797,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.025944113731384277
+      }
+    },
+    "81": {
+      "step": 81,
+      "game_state": [
+        0.7142857142857143,
+        -0.11333333333333333,
+        -0.4666666666666667,
+        0.2633333333333333,
+        0.52,
+        0.0
+      ],
+      "danger_score": 0.020888864994049072,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.012253224849700928,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01680922508239746,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03360414505004883
+      }
+    },
+    "82": {
+      "step": 82,
+      "game_state": [
+        0.6785714285714286,
+        -0.105,
+        -0.3333333333333333,
+        0.27166666666666667,
+        0.5116666666666667,
+        0.0
+      ],
+      "danger_score": 0.02311118443806966,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007553577423095703,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02525615692138672,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03652381896972656
+      }
+    },
+    "83": {
+      "step": 83,
+      "game_state": [
+        0.6428571428571429,
+        -0.08333333333333333,
+        -0.8666666666666667,
+        0.29333333333333333,
+        0.49,
+        0.0
+      ],
+      "danger_score": 0.004241188367207845,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0015518665313720703,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0035692453384399414,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.017844676971435547
+      }
+    },
+    "84": {
+      "step": 84,
+      "game_state": [
+        0.6071428571428571,
+        -0.065,
+        -0.7333333333333333,
+        0.31166666666666665,
+        0.4716666666666667,
+        0.0
+      ],
+      "danger_score": 0.011647939682006836,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.011802077293395996,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.00015556812286376953,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04690146446228027
+      }
+    },
+    "85": {
+      "step": 85,
+      "game_state": [
+        0.5714285714285714,
+        -0.05,
+        -0.6,
+        0.32666666666666666,
+        0.45666666666666667,
+        0.0
+      ],
+      "danger_score": 0.02859373887379964,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0018177032470703125,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.022075295448303223,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06188821792602539
+      }
+    },
+    "86": {
+      "step": 86,
+      "game_state": [
+        0.5357142857142857,
+        -0.03833333333333333,
+        -0.4666666666666667,
+        0.3383333333333333,
+        0.445,
+        0.0
+      ],
+      "danger_score": 0.0266077717145284,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0005043745040893555,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.028688013553619385,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.050630927085876465
+      }
+    },
+    "87": {
+      "step": 87,
+      "game_state": [
+        0.5,
+        -0.016666666666666666,
+        -0.8666666666666667,
+        0.36,
+        0.42333333333333334,
+        0.0
+      ],
+      "danger_score": 0.016444047292073567,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.002237081527709961,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.022900640964508057,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.024194419384002686
+      }
+    },
+    "88": {
+      "step": 88,
+      "game_state": [
+        0.4642857142857143,
+        0.0016666666666666668,
+        -0.7333333333333333,
+        0.37833333333333335,
+        0.405,
+        0.0
+      ],
+      "danger_score": 0.01837382713953654,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.000615239143371582,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012941598892211914,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04156464338302612
+      }
+    },
+    "89": {
+      "step": 89,
+      "game_state": [
+        0.42857142857142855,
+        0.023333333333333334,
+        -0.8666666666666667,
+        0.4,
+        0.38333333333333336,
+        0.0
+      ],
+      "danger_score": 0.01701478163401286,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0018888115882873535,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.013894200325012207,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.035261332988739014
+      }
+    },
+    "90": {
+      "step": 90,
+      "game_state": [
+        0.39285714285714285,
+        0.041666666666666664,
+        -0.7333333333333333,
+        0.41833333333333333,
+        0.365,
+        0.0
+      ],
+      "danger_score": 0.020237386226654053,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0002480745315551758,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.019529223442077637,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0414310097694397
+      }
+    },
+    "91": {
+      "step": 91,
+      "game_state": [
+        0.35714285714285715,
+        0.056666666666666664,
+        -0.6,
+        0.43333333333333335,
+        0.35,
+        0.0
+      ],
+      "danger_score": 0.02371362845102946,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005315184593200684,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.024488329887390137,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04133737087249756
+      }
+    },
+    "92": {
+      "step": 92,
+      "game_state": [
+        0.32142857142857145,
+        0.06833333333333333,
+        -0.4666666666666667,
+        0.445,
+        0.3383333333333333,
+        0.0
+      ],
+      "danger_score": 0.030235111713409424,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0008233785629272461,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0199967622756958,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06988519430160522
+      }
+    },
+    "93": {
+      "step": 93,
+      "game_state": [
+        0.2857142857142857,
+        0.07666666666666666,
+        -0.3333333333333333,
+        0.4533333333333333,
+        0.33,
+        0.0
+      ],
+      "danger_score": 0.03480623165766398,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004272818565368652,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02067357301712036,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07947230339050293
+      }
+    },
+    "94": {
+      "step": 94,
+      "game_state": [
+        0.25,
+        0.08166666666666667,
+        -0.2,
+        0.4583333333333333,
+        0.325,
+        0.0
+      ],
+      "danger_score": 0.02966765562693278,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0010802149772644043,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016311824321746826,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07161092758178711
+      }
+    },
+    "95": {
+      "step": 95,
+      "game_state": [
+        0.21428571428571427,
+        0.08333333333333333,
+        -0.06666666666666667,
+        0.46,
+        0.3233333333333333,
+        0.0
+      ],
+      "danger_score": 0.044232348601023354,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004867911338806152,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03019636869430542,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0976327657699585
+      }
+    },
+    "96": {
+      "step": 96,
+      "game_state": [
+        0.17857142857142858,
+        0.08166666666666667,
+        0.06666666666666667,
+        0.4583333333333333,
+        0.325,
+        0.0
+      ],
+      "danger_score": 0.045003652572631836,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.00013017654418945312,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03183579444885254,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10330533981323242
+      }
+    },
+    "97": {
+      "step": 97,
+      "game_state": [
+        0.14285714285714285,
+        0.07666666666666666,
+        0.2,
+        0.4533333333333333,
+        0.33,
+        0.0
+      ],
+      "danger_score": 0.05874905983606974,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.010218322277069092,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04577171802520752,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.12025713920593262
+      }
+    },
+    "98": {
+      "step": 98,
+      "game_state": [
+        0.10714285714285714,
+        0.06833333333333333,
+        0.3333333333333333,
+        0.445,
+        0.3383333333333333,
+        0.0
+      ],
+      "danger_score": 0.09367028872172038,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009804487228393555,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.09762012958526611,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.17358624935150146
+      }
+    },
+    "99": {
+      "step": 99,
+      "game_state": [
+        0.07142857142857142,
+        0.09,
+        -0.8666666666666667,
+        0.4666666666666667,
+        0.31666666666666665,
+        0.0
+      ],
+      "danger_score": 0.012475808461507162,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0006908774375915527,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0011191368103027344,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0356174111366272
+      }
+    },
+    "100": {
+      "step": 100,
+      "game_state": [
+        0.03571428571428571,
+        0.10833333333333334,
+        -0.7333333333333333,
+        0.485,
+        0.29833333333333334,
+        0.0
+      ],
+      "danger_score": 0.01817023754119873,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.00219118595123291,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.008371353149414062,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04833054542541504
+      }
+    },
+    "101": {
+      "step": 101,
+      "game_state": [
+        0.0,
+        0.12333333333333334,
+        -0.6,
+        0.5,
+        0.2833333333333333,
+        0.0
+      ],
+      "danger_score": 0.024937868118286133,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 4.374980926513672e-05,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.020123660564422607,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.054646193981170654
+      }
+    },
+    "102": {
+      "step": 102,
+      "game_state": [
+        -0.03571428571428571,
+        0.135,
+        -0.4666666666666667,
+        0.5116666666666667,
+        0.27166666666666667,
+        0.0
+      ],
+      "danger_score": 0.01659572124481201,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.00017368793487548828,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012808918952941895,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03715193271636963
+      }
+    },
+    "103": {
+      "step": 103,
+      "game_state": [
+        -0.07142857142857142,
+        0.14333333333333334,
+        -0.3333333333333333,
+        0.52,
+        0.2633333333333333,
+        0.0
+      ],
+      "danger_score": 0.01650826136271159,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0014786720275878906,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0212399959564209,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.029763460159301758
+      }
+    },
+    "104": {
+      "step": 104,
+      "game_state": [
+        -0.10714285714285714,
+        0.14833333333333334,
+        -0.2,
+        0.525,
+        0.25833333333333336,
+        0.0
+      ],
+      "danger_score": 0.016689260800679524,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.010172128677368164,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.017854809761047363,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.022040843963623047
+      }
+    },
+    "105": {
+      "step": 105,
+      "game_state": [
+        -0.14285714285714285,
+        0.15,
+        -0.06666666666666667,
+        0.5266666666666666,
+        0.25666666666666665,
+        0.0
+      ],
+      "danger_score": 0.003908852736155192,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0034210681915283203,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.003140389919281006,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.00516510009765625
+      }
+    },
+    "106": {
+      "step": 106,
+      "game_state": [
+        -0.17857142857142858,
+        0.14833333333333334,
+        0.06666666666666667,
+        0.525,
+        0.25833333333333336,
+        0.0
+      ],
+      "danger_score": 0.009602189064025879,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004810452461242676,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009877800941467285,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.014118313789367676
+      }
+    },
+    "107": {
+      "step": 107,
+      "game_state": [
+        -0.21428571428571427,
+        0.14333333333333334,
+        0.2,
+        0.52,
+        0.2633333333333333,
+        0.0
+      ],
+      "danger_score": 0.015164693196614584,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009687185287475586,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.014055132865905762,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.021751761436462402
+      }
+    },
+    "108": {
+      "step": 108,
+      "game_state": [
+        -0.25,
+        0.135,
+        0.3333333333333333,
+        0.5116666666666667,
+        0.27166666666666667,
+        0.0
+      ],
+      "danger_score": 0.02522595723470052,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007513940334320068,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.023988783359527588,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.044175148010253906
+      }
+    },
+    "109": {
+      "step": 109,
+      "game_state": [
+        0.7142857142857143,
+        0.4116666666666667,
+        0.4666666666666667,
+        0.5,
+        0.2833333333333333,
+        0.0
+      ],
+      "danger_score": 0.006723423798878987,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0022292137145996094,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.006111800670623779,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.011829257011413574
+      }
+    },
+    "110": {
+      "step": 110,
+      "game_state": [
+        0.6785714285714286,
+        0.39666666666666667,
+        0.6,
+        0.485,
+        0.29833333333333334,
+        0.0
+      ],
+      "danger_score": 0.010450502236684164,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009995341300964355,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.001373887062072754,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01998227834701538
+      }
+    },
+    "111": {
+      "step": 111,
+      "game_state": [
+        0.6428571428571429,
+        0.37833333333333335,
+        0.7333333333333333,
+        0.4666666666666667,
+        0.31666666666666665,
+        0.0
+      ],
+      "danger_score": 0.014628231525421143,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005936980247497559,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.024677574634552002,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.013270139694213867
+      }
+    },
+    "112": {
+      "step": 112,
+      "game_state": [
+        0.6071428571428571,
+        0.3566666666666667,
+        0.8666666666666667,
+        0.445,
+        0.3383333333333333,
+        0.0
+      ],
+      "danger_score": 0.028303444385528564,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008485674858093262,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.019900143146514893,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05652451515197754
+      }
+    },
+    "113": {
+      "step": 113,
+      "game_state": [
+        0.5714285714285714,
+        0.33166666666666667,
+        1.0,
+        0.42,
+        0.36333333333333334,
+        0.0
+      ],
+      "danger_score": 0.03476512432098389,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008107185363769531,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.00877535343170166,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08741283416748047
+      }
+    },
+    "114": {
+      "step": 114,
+      "game_state": [
+        0.5357142857142857,
+        0.30333333333333334,
+        1.1333333333333333,
+        0.39166666666666666,
+        0.39166666666666666,
+        0.0
+      ],
+      "danger_score": 0.034189840157826744,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00966036319732666,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.014618933200836182,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07829022407531738
+      }
+    },
+    "115": {
+      "step": 115,
+      "game_state": [
+        0.5,
+        0.27166666666666667,
+        1.2666666666666666,
+        0.36,
+        0.42333333333333334,
+        0.0
+      ],
+      "danger_score": 0.03820669651031494,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.030768513679504395,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02835559844970703,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0554959774017334
+      }
+    },
+    "116": {
+      "step": 116,
+      "game_state": [
+        0.4642857142857143,
+        0.23666666666666666,
+        1.4,
+        0.325,
+        0.4583333333333333,
+        0.0
+      ],
+      "danger_score": 0.053443710009256996,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.028244733810424805,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03917551040649414,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09291088581085205
+      }
+    },
+    "117": {
+      "step": 117,
+      "game_state": [
+        0.42857142857142855,
+        0.19833333333333333,
+        1.5333333333333334,
+        0.2866666666666667,
+        0.49666666666666665,
+        0.0
+      ],
+      "danger_score": 0.06397513548533122,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.030017375946044922,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.031800270080566406,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.13010776042938232
+      }
+    },
+    "118": {
+      "step": 118,
+      "game_state": [
+        0.39285714285714285,
+        0.15666666666666668,
+        1.6666666666666667,
+        0.245,
+        0.5383333333333333,
+        0.0
+      ],
+      "danger_score": 0.08698274691899617,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.02217555046081543,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.088981032371521,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1497916579246521
+      }
+    },
+    "119": {
+      "step": 119,
+      "game_state": [
+        0.35714285714285715,
+        0.11166666666666666,
+        1.8,
+        0.2,
+        0.5833333333333334,
+        0.0
+      ],
+      "danger_score": 0.14884591102600098,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.028520166873931885,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.21486270427703857,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.20315486192703247
+      }
+    },
+    "120": {
+      "step": 120,
+      "game_state": [
+        0.32142857142857145,
+        0.06333333333333334,
+        1.9333333333333333,
+        0.15166666666666667,
+        0.6316666666666667,
+        0.0
+      ],
+      "danger_score": 0.25866079330444336,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.06834292411804199,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.4510399103164673,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2565995454788208
+      }
+    },
+    "121": {
+      "step": 121,
+      "game_state": [
+        0.2857142857142857,
+        0.085,
+        -0.8666666666666667,
+        0.17333333333333334,
+        0.61,
+        0.0
+      ],
+      "danger_score": 0.014858206113179525,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004335284233093262,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.025795698165893555,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.014443635940551758
+      }
+    },
+    "122": {
+      "step": 122,
+      "game_state": [
+        0.25,
+        0.10333333333333333,
+        -0.7333333333333333,
+        0.19166666666666668,
+        0.5916666666666667,
+        0.0
+      ],
+      "danger_score": 0.011340836683909098,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0034325122833251953,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.013115406036376953,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.017474591732025146
+      }
+    },
+    "123": {
+      "step": 123,
+      "game_state": [
+        0.21428571428571427,
+        0.11833333333333333,
+        -0.6,
+        0.20666666666666667,
+        0.5766666666666667,
+        0.0
+      ],
+      "danger_score": 0.014562169710795084,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00681757926940918,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01778888702392578,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.019080042839050293
+      }
+    },
+    "124": {
+      "step": 124,
+      "game_state": [
+        0.17857142857142858,
+        0.13,
+        -0.4666666666666667,
+        0.21833333333333332,
+        0.565,
+        0.0
+      ],
+      "danger_score": 0.008624951044718424,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006445407867431641,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0022019147872924805,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.021631360054016113
+      }
+    },
+    "125": {
+      "step": 125,
+      "game_state": [
+        0.14285714285714285,
+        0.13833333333333334,
+        -0.3333333333333333,
+        0.22666666666666666,
+        0.5566666666666666,
+        0.0
+      ],
+      "danger_score": 0.023958027362823486,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0033760666847229004,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.020026326179504395,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.048471689224243164
+      }
+    },
+    "126": {
+      "step": 126,
+      "game_state": [
+        0.10714285714285714,
+        0.14333333333333334,
+        -0.2,
+        0.23166666666666666,
+        0.5516666666666666,
+        0.0
+      ],
+      "danger_score": 0.04004836082458496,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007339119911193848,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03978586196899414,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0730201005935669
+      }
+    },
+    "127": {
+      "step": 127,
+      "game_state": [
+        0.07142857142857142,
+        0.145,
+        -0.06666666666666667,
+        0.23333333333333334,
+        0.55,
+        0.0
+      ],
+      "danger_score": 0.02736888329188029,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.012138068675994873,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.019759774208068848,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05020880699157715
+      }
+    },
+    "128": {
+      "step": 128,
+      "game_state": [
+        0.03571428571428571,
+        0.14333333333333334,
+        0.06666666666666667,
+        0.23166666666666666,
+        0.5516666666666666,
+        0.0
+      ],
+      "danger_score": 0.02715877691904704,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006459712982177734,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.029419779777526855,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04559683799743652
+      }
+    },
+    "129": {
+      "step": 129,
+      "game_state": [
+        0.0,
+        0.13833333333333334,
+        0.2,
+        0.22666666666666666,
+        0.5566666666666666,
+        0.0
+      ],
+      "danger_score": 0.05058811108271281,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.01767498254776001,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04263007640838623,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09145927429199219
+      }
+    },
+    "130": {
+      "step": 130,
+      "game_state": [
+        -0.03571428571428571,
+        0.13,
+        0.3333333333333333,
+        0.21833333333333332,
+        0.565,
+        0.0
+      ],
+      "danger_score": 0.06532889604568481,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008677899837493896,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.052701354026794434,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1346074342727661
+      }
+    },
+    "131": {
+      "step": 131,
+      "game_state": [
+        -0.07142857142857142,
+        0.11833333333333333,
+        0.4666666666666667,
+        0.20666666666666667,
+        0.5766666666666667,
+        0.0
+      ],
+      "danger_score": 0.07036304473876953,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009400010108947754,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03697562217712402,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.16471350193023682
+      }
+    },
+    "132": {
+      "step": 132,
+      "game_state": [
+        -0.10714285714285714,
+        0.14,
+        -0.8666666666666667,
+        0.22833333333333333,
+        0.555,
+        0.0
+      ],
+      "danger_score": 0.07799812157948811,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0811309814453125,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.057409703731536865,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09545367956161499
+      }
+    },
+    "133": {
+      "step": 133,
+      "game_state": [
+        -0.14285714285714285,
+        0.15833333333333333,
+        -0.7333333333333333,
+        0.24666666666666667,
+        0.5366666666666666,
+        0.0
+      ],
+      "danger_score": 0.09466105699539185,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.1048816442489624,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.07192069292068481,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10718083381652832
+      }
+    },
+    "134": {
+      "step": 134,
+      "game_state": [
+        -0.17857142857142858,
+        0.17333333333333334,
+        -0.6,
+        0.26166666666666666,
+        0.5216666666666666,
+        0.0
+      ],
+      "danger_score": 0.08824338515599568,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.12629973888397217,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.06698983907699585,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07144057750701904
+      }
+    },
+    "135": {
+      "step": 135,
+      "game_state": [
+        -0.21428571428571427,
+        0.185,
+        -0.4666666666666667,
+        0.2733333333333333,
+        0.51,
+        0.0
+      ],
+      "danger_score": 0.06818181276321411,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.10006356239318848,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04834306240081787,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.056138813495635986
+      }
+    },
+    "136": {
+      "step": 136,
+      "game_state": [
+        -0.25,
+        0.19333333333333333,
+        -0.3333333333333333,
+        0.2816666666666667,
+        0.5016666666666667,
+        0.0
+      ],
+      "danger_score": 0.03894388675689697,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.05628246068954468,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03149151802062988,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.029057681560516357
+      }
+    },
+    "137": {
+      "step": 137,
+      "game_state": [
+        0.7142857142857143,
+        -0.03,
+        -0.2,
+        0.2866666666666667,
+        0.49666666666666665,
+        0.0
+      ],
+      "danger_score": 0.01625742514928182,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004818141460418701,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.021796464920043945,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.022157669067382812
+      }
+    },
+    "138": {
+      "step": 138,
+      "game_state": [
+        0.6785714285714286,
+        -0.028333333333333332,
+        -0.06666666666666667,
+        0.28833333333333333,
+        0.495,
+        0.0
+      ],
+      "danger_score": 0.0251311461130778,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0034940242767333984,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.030247032642364502,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0416523814201355
+      }
+    },
+    "139": {
+      "step": 139,
+      "game_state": [
+        0.6428571428571429,
+        -0.03,
+        0.06666666666666667,
+        0.2866666666666667,
+        0.49666666666666665,
+        0.0
+      ],
+      "danger_score": 0.019214749336242676,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0011594891548156738,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.005778074264526367,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.050706684589385986
+      }
+    },
+    "140": {
+      "step": 140,
+      "game_state": [
+        0.6071428571428571,
+        -0.035,
+        0.2,
+        0.2816666666666667,
+        0.5016666666666667,
+        0.0
+      ],
+      "danger_score": 0.02175062894821167,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.001592874526977539,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.006408214569091797,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07325297594070435
+      }
+    },
+    "141": {
+      "step": 141,
+      "game_state": [
+        0.5714285714285714,
+        -0.013333333333333334,
+        -0.8666666666666667,
+        0.30333333333333334,
+        0.48,
+        0.0
+      ],
+      "danger_score": 0.010433892409006754,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0024350881576538086,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009732961654663086,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01913362741470337
+      }
+    },
+    "142": {
+      "step": 142,
+      "game_state": [
+        0.5357142857142857,
+        0.005,
+        -0.7333333333333333,
+        0.32166666666666666,
+        0.46166666666666667,
+        0.0
+      ],
+      "danger_score": 0.015009562174479166,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.004964351654052734,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.008976936340332031,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0410161018371582
+      }
+    },
+    "143": {
+      "step": 143,
+      "game_state": [
+        0.5,
+        0.02,
+        -0.6,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.013992031415303549,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.005658268928527832,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.006278872489929199,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04135549068450928
+      }
+    },
+    "144": {
+      "step": 144,
+      "game_state": [
+        0.4642857142857143,
+        0.03166666666666667,
+        -0.4666666666666667,
+        0.34833333333333333,
+        0.435,
+        0.0
+      ],
+      "danger_score": 0.014518797397613525,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0020716190338134766,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.004314780235290527,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.041313230991363525
+      }
+    },
+    "145": {
+      "step": 145,
+      "game_state": [
+        0.42857142857142855,
+        0.05333333333333334,
+        -0.8666666666666667,
+        0.37,
+        0.41333333333333333,
+        0.0
+      ],
+      "danger_score": 0.02024732033411662,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004057586193084717,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012006044387817383,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.044678330421447754
+      }
+    },
+    "146": {
+      "step": 146,
+      "game_state": [
+        0.39285714285714285,
+        0.07166666666666667,
+        -0.7333333333333333,
+        0.3883333333333333,
+        0.395,
+        0.0
+      ],
+      "danger_score": 0.01923855145772298,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0033533573150634766,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009120702743530273,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.045241594314575195
+      }
+    },
+    "147": {
+      "step": 147,
+      "game_state": [
+        0.35714285714285715,
+        0.08666666666666667,
+        -0.6,
+        0.4033333333333333,
+        0.38,
+        0.0
+      ],
+      "danger_score": 0.021329681078592937,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.00594782829284668,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.022079944610595703,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.047856926918029785
+      }
+    },
+    "148": {
+      "step": 148,
+      "game_state": [
+        0.32142857142857145,
+        0.09833333333333333,
+        -0.4666666666666667,
+        0.415,
+        0.36833333333333335,
+        0.0
+      ],
+      "danger_score": 0.03234656651814779,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.005107879638671875,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03067755699157715,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07147002220153809
+      }
+    },
+    "149": {
+      "step": 149,
+      "game_state": [
+        0.2857142857142857,
+        0.10666666666666667,
+        -0.3333333333333333,
+        0.42333333333333334,
+        0.36,
+        0.0
+      ],
+      "danger_score": 0.03243333101272583,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.007788181304931641,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02490222454071045,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08018594980239868
+      }
+    },
+    "150": {
+      "step": 150,
+      "game_state": [
+        0.25,
+        0.11166666666666666,
+        -0.2,
+        0.42833333333333334,
+        0.355,
+        0.0
+      ],
+      "danger_score": 0.03154474496841431,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0069051384925842285,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.018520832061767578,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06920826435089111
+      }
+    },
+    "151": {
+      "step": 151,
+      "game_state": [
+        0.21428571428571427,
+        0.11333333333333333,
+        -0.06666666666666667,
+        0.43,
+        0.35333333333333333,
+        0.0
+      ],
+      "danger_score": 0.04670828580856323,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005958735942840576,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03948378562927246,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09468233585357666
+      }
+    },
+    "152": {
+      "step": 152,
+      "game_state": [
+        0.17857142857142858,
+        0.11166666666666666,
+        0.06666666666666667,
+        0.42833333333333334,
+        0.355,
+        0.0
+      ],
+      "danger_score": 0.04674810171127319,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.003909468650817871,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03469151258468628,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10164332389831543
+      }
+    },
+    "153": {
+      "step": 153,
+      "game_state": [
+        0.14285714285714285,
+        0.10666666666666667,
+        0.2,
+        0.42333333333333334,
+        0.36,
+        0.0
+      ],
+      "danger_score": 0.05630354086558024,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.014796137809753418,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.044103026390075684,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.11001145839691162
+      }
+    },
+    "154": {
+      "step": 154,
+      "game_state": [
+        0.10714285714285714,
+        0.09833333333333333,
+        0.3333333333333333,
+        0.415,
+        0.36833333333333335,
+        0.0
+      ],
+      "danger_score": 0.08437720934549968,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.014985620975494385,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0870131254196167,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.15113288164138794
+      }
+    },
+    "155": {
+      "step": 155,
+      "game_state": [
+        0.07142857142857142,
+        0.12,
+        -0.8666666666666667,
+        0.43666666666666665,
+        0.3466666666666667,
+        0.0
+      ],
+      "danger_score": 0.058821539084116616,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.02090632915496826,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04263406991958618,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.11292421817779541
+      }
+    },
+    "156": {
+      "step": 156,
+      "game_state": [
+        0.03571428571428571,
+        0.13833333333333334,
+        -0.7333333333333333,
+        0.455,
+        0.3283333333333333,
+        0.0
+      ],
+      "danger_score": 0.061723947525024414,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008054018020629883,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04672348499298096,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1303943395614624
+      }
+    },
+    "157": {
+      "step": 157,
+      "game_state": [
+        0.0,
+        0.15333333333333332,
+        -0.6,
+        0.47,
+        0.31333333333333335,
+        0.0
+      ],
+      "danger_score": 0.05606995026270548,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.002918720245361328,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05852019786834717,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10677093267440796
+      }
+    },
+    "158": {
+      "step": 158,
+      "game_state": [
+        -0.03571428571428571,
+        0.165,
+        -0.4666666666666667,
+        0.4816666666666667,
+        0.3016666666666667,
+        0.0
+      ],
+      "danger_score": 0.04233721892038981,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.016126513481140137,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03278326988220215,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07810187339782715
+      }
+    },
+    "159": {
+      "step": 159,
+      "game_state": [
+        -0.07142857142857142,
+        0.17333333333333334,
+        -0.3333333333333333,
+        0.49,
+        0.29333333333333333,
+        0.0
+      ],
+      "danger_score": 0.0233535369237264,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0034722089767456055,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.021609485149383545,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05192333459854126
+      }
+    },
+    "160": {
+      "step": 160,
+      "game_state": [
+        -0.10714285714285714,
+        0.17833333333333334,
+        -0.2,
+        0.495,
+        0.28833333333333333,
+        0.0
+      ],
+      "danger_score": 0.022188544273376465,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0035321712493896484,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.023386359214782715,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03964710235595703
+      }
+    },
+    "161": {
+      "step": 161,
+      "game_state": [
+        -0.14285714285714285,
+        0.18,
+        -0.06666666666666667,
+        0.49666666666666665,
+        0.2866666666666667,
+        0.0
+      ],
+      "danger_score": 0.013983388741811117,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.013755500316619873,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01910698413848877,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.009087681770324707
+      }
+    },
+    "162": {
+      "step": 162,
+      "game_state": [
+        -0.17857142857142858,
+        0.17833333333333334,
+        0.06666666666666667,
+        0.495,
+        0.28833333333333333,
+        0.0
+      ],
+      "danger_score": 0.017288565635681152,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.010748505592346191,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01495349407196045,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.026163697242736816
+      }
+    },
+    "163": {
+      "step": 163,
+      "game_state": [
+        -0.21428571428571427,
+        0.17333333333333334,
+        0.2,
+        0.49,
+        0.29333333333333333,
+        0.0
+      ],
+      "danger_score": 0.010822415351867676,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.001128077507019043,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009532690048217773,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.024062633514404297
+      }
+    },
+    "164": {
+      "step": 164,
+      "game_state": [
+        -0.25,
+        0.165,
+        0.3333333333333333,
+        0.4816666666666667,
+        0.3016666666666667,
+        0.0
+      ],
+      "danger_score": 0.024837930997212727,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.013276457786560059,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02134716510772705,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.039890170097351074
+      }
+    },
+    "165": {
+      "step": 165,
+      "game_state": [
+        0.7142857142857143,
+        0.2866666666666667,
+        0.4666666666666667,
+        0.47,
+        0.31333333333333335,
+        0.0
+      ],
+      "danger_score": 0.011316319306691488,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00956416130065918,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.006665349006652832,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01771944761276245
+      }
+    },
+    "166": {
+      "step": 166,
+      "game_state": [
+        0.6785714285714286,
+        0.27166666666666667,
+        0.6,
+        0.455,
+        0.3283333333333333,
+        0.0
+      ],
+      "danger_score": 0.019478440284729004,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005012392997741699,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012754619121551514,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0406683087348938
+      }
+    },
+    "167": {
+      "step": 167,
+      "game_state": [
+        0.6428571428571429,
+        0.25333333333333335,
+        0.7333333333333333,
+        0.43666666666666665,
+        0.3466666666666667,
+        0.0
+      ],
+      "danger_score": 0.017507314682006836,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.002522706985473633,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0056067705154418945,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04439246654510498
+      }
+    },
+    "168": {
+      "step": 168,
+      "game_state": [
+        0.6071428571428571,
+        0.23166666666666666,
+        0.8666666666666667,
+        0.415,
+        0.36833333333333335,
+        0.0
+      ],
+      "danger_score": 0.019592841466267902,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008038043975830078,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.015083551406860352,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03565692901611328
+      }
+    },
+    "169": {
+      "step": 169,
+      "game_state": [
+        0.5714285714285714,
+        0.20666666666666667,
+        1.0,
+        0.39,
+        0.3933333333333333,
+        0.0
+      ],
+      "danger_score": 0.01578750212987264,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008849263191223145,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0016952753067016602,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.036817967891693115
+      }
+    },
+    "170": {
+      "step": 170,
+      "game_state": [
+        0.5357142857142857,
+        0.17833333333333334,
+        1.1333333333333333,
+        0.3616666666666667,
+        0.4216666666666667,
+        0.0
+      ],
+      "danger_score": 0.019371410210927326,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007175803184509277,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012533068656921387,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03840535879135132
+      }
+    },
+    "171": {
+      "step": 171,
+      "game_state": [
+        0.5,
+        0.14666666666666667,
+        1.2666666666666666,
+        0.33,
+        0.4533333333333333,
+        0.0
+      ],
+      "danger_score": 0.03981844584147135,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004768192768096924,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.013699948787689209,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10098719596862793
+      }
+    },
+    "172": {
+      "step": 172,
+      "game_state": [
+        0.4642857142857143,
+        0.11166666666666666,
+        1.4,
+        0.295,
+        0.48833333333333334,
+        0.0
+      ],
+      "danger_score": 0.05872231721878052,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005523502826690674,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02203202247619629,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1486114263534546
+      }
+    },
+    "173": {
+      "step": 173,
+      "game_state": [
+        0.42857142857142855,
+        0.07333333333333333,
+        1.5333333333333334,
+        0.25666666666666665,
+        0.5266666666666666,
+        0.0
+      ],
+      "danger_score": 0.07912365595499675,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.015039563179016113,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05345046520233154,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.16888093948364258
+      }
+    },
+    "174": {
+      "step": 174,
+      "game_state": [
+        0.39285714285714285,
+        0.095,
+        -0.8666666666666667,
+        0.2783333333333333,
+        0.505,
+        0.0
+      ],
+      "danger_score": 0.02997777859369914,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0017799139022827148,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.043900489807128906,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.04425293207168579
+      }
+    },
+    "175": {
+      "step": 175,
+      "game_state": [
+        0.35714285714285715,
+        0.11333333333333333,
+        -0.7333333333333333,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.02703118324279785,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008578240871429443,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.034291982650756836,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.038223326206207275
+      }
+    },
+    "176": {
+      "step": 176,
+      "game_state": [
+        0.32142857142857145,
+        0.12833333333333333,
+        -0.6,
+        0.31166666666666665,
+        0.4716666666666667,
+        0.0
+      ],
+      "danger_score": 0.025967498620351154,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007643163204193115,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.023101091384887695,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.047158241271972656
+      }
+    },
+    "177": {
+      "step": 177,
+      "game_state": [
+        0.2857142857142857,
+        0.14,
+        -0.4666666666666667,
+        0.3233333333333333,
+        0.46,
+        0.0
+      ],
+      "danger_score": 0.03140042225519816,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0032305121421813965,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.040322184562683105,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05064857006072998
+      }
+    },
+    "178": {
+      "step": 178,
+      "game_state": [
+        0.25,
+        0.14833333333333334,
+        -0.3333333333333333,
+        0.33166666666666667,
+        0.45166666666666666,
+        0.0
+      ],
+      "danger_score": 0.035672505696614586,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0068552494049072266,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.03516721725463867,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06499505043029785
+      }
+    },
+    "179": {
+      "step": 179,
+      "game_state": [
+        0.21428571428571427,
+        0.15333333333333332,
+        -0.2,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.0315362811088562,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00638580322265625,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02701544761657715,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.061207592487335205
+      }
+    },
+    "180": {
+      "step": 180,
+      "game_state": [
+        0.17857142857142858,
+        0.155,
+        -0.06666666666666667,
+        0.3383333333333333,
+        0.445,
+        0.0
+      ],
+      "danger_score": 0.03966794411341349,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.019026458263397217,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.028136253356933594,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07184112071990967
+      }
+    },
+    "181": {
+      "step": 181,
+      "game_state": [
+        0.14285714285714285,
+        0.15333333333333332,
+        0.06666666666666667,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.05056236187616984,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011809349060058594,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04018789529800415,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09968984127044678
+      }
+    },
+    "182": {
+      "step": 182,
+      "game_state": [
+        0.10714285714285714,
+        0.14833333333333334,
+        0.2,
+        0.33166666666666667,
+        0.45166666666666666,
+        0.0
+      ],
+      "danger_score": 0.05192812283833822,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.009480059146881104,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04651033878326416,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09979397058486938
+      }
+    },
+    "183": {
+      "step": 183,
+      "game_state": [
+        0.07142857142857142,
+        0.14,
+        0.3333333333333333,
+        0.3233333333333333,
+        0.46,
+        0.0
+      ],
+      "danger_score": 0.0735039512316386,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.02095729112625122,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04193472862243652,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.15761983394622803
+      }
+    },
+    "184": {
+      "step": 184,
+      "game_state": [
+        0.03571428571428571,
+        0.12833333333333333,
+        0.4666666666666667,
+        0.31166666666666665,
+        0.4716666666666667,
+        0.0
+      ],
+      "danger_score": 0.09642634789148967,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.040953874588012695,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.06319844722747803,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.18512672185897827
+      }
+    },
+    "185": {
+      "step": 185,
+      "game_state": [
+        0.0,
+        0.11333333333333333,
+        0.6,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.11878331502278645,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.02804666757583618,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.07385528087615967,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2544479966163635
+      }
+    },
+    "186": {
+      "step": 186,
+      "game_state": [
+        -0.03571428571428571,
+        0.095,
+        0.7333333333333333,
+        0.2783333333333333,
+        0.505,
+        0.0
+      ],
+      "danger_score": 0.1545011798540751,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.042717695236206055,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.08598679304122925,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.33479905128479004
+      }
+    },
+    "187": {
+      "step": 187,
+      "game_state": [
+        -0.07142857142857142,
+        0.07333333333333333,
+        0.8666666666666667,
+        0.25666666666666665,
+        0.5266666666666666,
+        0.0
+      ],
+      "danger_score": 0.19650973876317343,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.06475770473480225,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.1988094449043274,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.3259620666503906
+      }
+    },
+    "188": {
+      "step": 188,
+      "game_state": [
+        -0.10714285714285714,
+        0.095,
+        -0.8666666666666667,
+        0.2783333333333333,
+        0.505,
+        0.0
+      ],
+      "danger_score": 0.012281517187754313,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0073531270027160645,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009752154350280762,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.019739270210266113
+      }
+    },
+    "189": {
+      "step": 189,
+      "game_state": [
+        -0.14285714285714285,
+        0.11333333333333333,
+        -0.7333333333333333,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.012962122758229574,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0034003853797912598,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.006210148334503174,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.029275834560394287
+      }
+    },
+    "190": {
+      "step": 190,
+      "game_state": [
+        -0.17857142857142858,
+        0.12833333333333333,
+        -0.6,
+        0.31166666666666665,
+        0.4716666666666667,
+        0.0
+      ],
+      "danger_score": 0.01599802573521932,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.002651989459991455,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012072086334228516,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03327000141143799
+      }
+    },
+    "191": {
+      "step": 191,
+      "game_state": [
+        -0.21428571428571427,
+        0.14,
+        -0.4666666666666667,
+        0.3233333333333333,
+        0.46,
+        0.0
+      ],
+      "danger_score": 0.01655377944310506,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0028672218322753906,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.008876681327819824,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03791743516921997
+      }
+    },
+    "192": {
+      "step": 192,
+      "game_state": [
+        -0.25,
+        0.14833333333333334,
+        -0.3333333333333333,
+        0.33166666666666667,
+        0.45166666666666666,
+        0.0
+      ],
+      "danger_score": 0.014954706033070883,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005795300006866455,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0007115602493286133,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.039780378341674805
+      }
+    },
+    "193": {
+      "step": 193,
+      "game_state": [
+        0.7142857142857143,
+        -0.07166666666666667,
+        -0.2,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.016500552495320637,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.010737717151641846,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.006943821907043457,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03182011842727661
+      }
+    },
+    "194": {
+      "step": 194,
+      "game_state": [
+        0.6785714285714286,
+        -0.07,
+        -0.06666666666666667,
+        0.3383333333333333,
+        0.445,
+        0.0
+      ],
+      "danger_score": 0.02435376246770223,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011188030242919922,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.004738569259643555,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.05713468790054321
+      }
+    },
+    "195": {
+      "step": 195,
+      "game_state": [
+        0.6428571428571429,
+        -0.07166666666666667,
+        0.06666666666666667,
+        0.33666666666666667,
+        0.44666666666666666,
+        0.0
+      ],
+      "danger_score": 0.02661287784576416,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004146933555603027,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.010616540908813477,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06507515907287598
+      }
+    },
+    "196": {
+      "step": 196,
+      "game_state": [
+        0.6071428571428571,
+        -0.07666666666666666,
+        0.2,
+        0.33166666666666667,
+        0.45166666666666666,
+        0.0
+      ],
+      "danger_score": 0.03861530621846517,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.014760851860046387,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.015704989433288574,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08538007736206055
+      }
+    },
+    "197": {
+      "step": 197,
+      "game_state": [
+        0.5714285714285714,
+        -0.085,
+        0.3333333333333333,
+        0.3233333333333333,
+        0.46,
+        0.0
+      ],
+      "danger_score": 0.026298244794209797,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006034135818481445,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.005560874938964844,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07842147350311279
+      }
+    },
+    "198": {
+      "step": 198,
+      "game_state": [
+        0.5357142857142857,
+        -0.09666666666666666,
+        0.4666666666666667,
+        0.31166666666666665,
+        0.4716666666666667,
+        0.0
+      ],
+      "danger_score": 0.03926642735799154,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.006626129150390625,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.008657097816467285,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.11576831340789795
+      }
+    },
+    "199": {
+      "step": 199,
+      "game_state": [
+        0.5,
+        -0.11166666666666666,
+        0.6,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.046993414560953774,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.012562274932861328,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012855291366577148,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1406872272491455
+      }
+    },
+    "200": {
+      "step": 200,
+      "game_state": [
+        0.4642857142857143,
+        -0.13,
+        0.7333333333333333,
+        0.2783333333333333,
+        0.505,
+        0.0
+      ],
+      "danger_score": 0.13224434852600098,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.03494393825531006,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.15876007080078125,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.20302903652191162
+      }
+    },
+    "201": {
+      "step": 201,
+      "game_state": [
+        0.42857142857142855,
+        -0.15166666666666667,
+        0.8666666666666667,
+        0.25666666666666665,
+        0.5266666666666666,
+        0.0
+      ],
+      "danger_score": 0.2511753439903259,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.09716415405273438,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.3369169235229492,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.3194449543952942
+      }
+    },
+    "202": {
+      "step": 202,
+      "game_state": [
+        0.39285714285714285,
+        -0.13,
+        -0.8666666666666667,
+        0.2783333333333333,
+        0.505,
+        0.0
+      ],
+      "danger_score": 0.02282188336054484,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00028699636459350586,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01804530620574951,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.050133347511291504
+      }
+    },
+    "203": {
+      "step": 203,
+      "game_state": [
+        0.35714285714285715,
+        -0.11166666666666666,
+        -0.7333333333333333,
+        0.2966666666666667,
+        0.4866666666666667,
+        0.0
+      ],
+      "danger_score": 0.030303537845611572,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0025600194931030273,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.023184597492218018,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07028603553771973
+      }
+    },
+    "204": {
+      "step": 204,
+      "game_state": [
+        0.32142857142857145,
+        -0.09666666666666666,
+        -0.6,
+        0.31166666666666665,
+        0.4716666666666667,
+        0.0
+      ],
+      "danger_score": 0.04263254006703695,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.019610822200775146,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.031362175941467285,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07692462205886841
+      }
+    },
+    "205": {
+      "step": 205,
+      "game_state": [
+        0.2857142857142857,
+        -0.075,
+        -0.8666666666666667,
+        0.3333333333333333,
+        0.45,
+        0.0
+      ],
+      "danger_score": 0.010239183902740479,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.006232619285583496,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.004157066345214844,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.041107237339019775
+      }
+    },
+    "206": {
+      "step": 206,
+      "game_state": [
+        0.25,
+        -0.056666666666666664,
+        -0.7333333333333333,
+        0.3516666666666667,
+        0.43166666666666664,
+        0.0
+      ],
+      "danger_score": 0.01719444990158081,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.006085395812988281,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0024861693382263184,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.055182576179504395
+      }
+    },
+    "207": {
+      "step": 207,
+      "game_state": [
+        0.21428571428571427,
+        -0.041666666666666664,
+        -0.6,
+        0.36666666666666664,
+        0.4166666666666667,
+        0.0
+      ],
+      "danger_score": 0.01123340924580892,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0034264326095581055,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.008011102676391602,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.045137763023376465
+      }
+    },
+    "208": {
+      "step": 208,
+      "game_state": [
+        0.17857142857142858,
+        -0.03,
+        -0.4666666666666667,
+        0.37833333333333335,
+        0.405,
+        0.0
+      ],
+      "danger_score": 0.0060843825340271,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0031586885452270508,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.013016343116760254,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.034428179264068604
+      }
+    },
+    "209": {
+      "step": 209,
+      "game_state": [
+        0.14285714285714285,
+        -0.021666666666666667,
+        -0.3333333333333333,
+        0.38666666666666666,
+        0.39666666666666667,
+        0.0
+      ],
+      "danger_score": 0.015620013078053793,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.014515936374664307,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.002036571502685547,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.030307531356811523
+      }
+    },
+    "210": {
+      "step": 210,
+      "game_state": [
+        0.10714285714285714,
+        -0.016666666666666666,
+        -0.2,
+        0.39166666666666666,
+        0.39166666666666666,
+        0.0
+      ],
+      "danger_score": 0.050760348637898765,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.021051764488220215,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.021140635013580322,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.11008864641189575
+      }
+    },
+    "211": {
+      "step": 211,
+      "game_state": [
+        0.07142857142857142,
+        -0.015,
+        -0.06666666666666667,
+        0.3933333333333333,
+        0.39,
+        0.0
+      ],
+      "danger_score": 0.0668344497680664,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.016564667224884033,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012485623359680176,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.171453058719635
+      }
+    },
+    "212": {
+      "step": 212,
+      "game_state": [
+        0.03571428571428571,
+        0.006666666666666667,
+        -0.8666666666666667,
+        0.415,
+        0.36833333333333335,
+        0.0
+      ],
+      "danger_score": 0.01419132947921753,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011677801609039307,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.041809678077697754,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": -0.010913491249084473
+      }
+    },
+    "213": {
+      "step": 213,
+      "game_state": [
+        0.0,
+        0.025,
+        -0.7333333333333333,
+        0.43333333333333335,
+        0.35,
+        0.0
+      ],
+      "danger_score": 0.013857205708821615,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008393287658691406,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.015392303466796875,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.017786026000976562
+      }
+    },
+    "214": {
+      "step": 214,
+      "game_state": [
+        -0.03571428571428571,
+        0.04,
+        -0.6,
+        0.4483333333333333,
+        0.335,
+        0.0
+      ],
+      "danger_score": 0.014711777369181315,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006491422653198242,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 3.6597251892089844e-05,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03760731220245361
+      }
+    },
+    "215": {
+      "step": 215,
+      "game_state": [
+        -0.07142857142857142,
+        0.051666666666666666,
+        -0.4666666666666667,
+        0.46,
+        0.3233333333333333,
+        0.0
+      ],
+      "danger_score": 0.002266526222229004,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0010737180709838867,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0023218393325805664,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.010195136070251465
+      }
+    },
+    "216": {
+      "step": 216,
+      "game_state": [
+        -0.10714285714285714,
+        0.06,
+        -0.3333333333333333,
+        0.4683333333333333,
+        0.315,
+        0.0
+      ],
+      "danger_score": 0.014941136042277018,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0078067779541015625,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.016493558883666992,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0205230712890625
+      }
+    },
+    "217": {
+      "step": 217,
+      "game_state": [
+        -0.14285714285714285,
+        0.065,
+        -0.2,
+        0.47333333333333333,
+        0.31,
+        0.0
+      ],
+      "danger_score": 0.01836607853571574,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011803925037384033,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0039861202239990234,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03930819034576416
+      }
+    },
+    "218": {
+      "step": 218,
+      "game_state": [
+        -0.17857142857142858,
+        0.06666666666666667,
+        -0.06666666666666667,
+        0.475,
+        0.30833333333333335,
+        0.0
+      ],
+      "danger_score": 0.01708058516184489,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00781625509262085,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.014827966690063477,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.028597533702850342
+      }
+    },
+    "219": {
+      "step": 219,
+      "game_state": [
+        -0.21428571428571427,
+        0.065,
+        0.06666666666666667,
+        0.47333333333333333,
+        0.31,
+        0.0
+      ],
+      "danger_score": 0.02039092779159546,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011959731578826904,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.02164006233215332,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.027572989463806152
+      }
+    },
+    "220": {
+      "step": 220,
+      "game_state": [
+        -0.25,
+        0.06,
+        0.2,
+        0.4683333333333333,
+        0.315,
+        0.0
+      ],
+      "danger_score": 0.016126434008280437,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0008275508880615234,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.027499794960021973,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02170705795288086
+      }
+    },
+    "221": {
+      "step": 221,
+      "game_state": [
+        0.7142857142857143,
+        0.22,
+        0.3333333333333333,
+        0.46,
+        0.3233333333333333,
+        0.0
+      ],
+      "danger_score": 0.018157939116160076,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006578564643859863,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01095724105834961,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03693801164627075
+      }
+    },
+    "222": {
+      "step": 222,
+      "game_state": [
+        0.6785714285714286,
+        0.20833333333333334,
+        0.4666666666666667,
+        0.4483333333333333,
+        0.335,
+        0.0
+      ],
+      "danger_score": 0.01781022548675537,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004926085472106934,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009142160415649414,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.039362430572509766
+      }
+    },
+    "223": {
+      "step": 223,
+      "game_state": [
+        0.6428571428571429,
+        0.19333333333333333,
+        0.6,
+        0.43333333333333335,
+        0.35,
+        0.0
+      ],
+      "danger_score": 0.01185077428817749,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00041687488555908203,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0035097599029541016,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.03162568807601929
+      }
+    },
+    "224": {
+      "step": 224,
+      "game_state": [
+        0.6071428571428571,
+        0.175,
+        0.7333333333333333,
+        0.415,
+        0.36833333333333335,
+        0.0
+      ],
+      "danger_score": 0.015119413534800211,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.00579833984375,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009468436241149902,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.030091464519500732
+      }
+    },
+    "225": {
+      "step": 225,
+      "game_state": [
+        0.5714285714285714,
+        0.15333333333333332,
+        0.8666666666666667,
+        0.3933333333333333,
+        0.39,
+        0.0
+      ],
+      "danger_score": 0.011394004027048746,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.011591076850891113,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.007015407085418701,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.015575528144836426
+      }
+    },
+    "226": {
+      "step": 226,
+      "game_state": [
+        0.5357142857142857,
+        0.12833333333333333,
+        1.0,
+        0.36833333333333335,
+        0.415,
+        0.0
+      ],
+      "danger_score": 0.017645021279652912,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007274925708770752,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.012911081314086914,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.032749056816101074
+      }
+    },
+    "227": {
+      "step": 227,
+      "game_state": [
+        0.5,
+        0.1,
+        1.1333333333333333,
+        0.34,
+        0.44333333333333336,
+        0.0
+      ],
+      "danger_score": 0.041999379793802895,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.007262706756591797,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0052030086517333984,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1135324239730835
+      }
+    },
+    "228": {
+      "step": 228,
+      "game_state": [
+        0.4642857142857143,
+        0.06833333333333333,
+        1.2666666666666666,
+        0.30833333333333335,
+        0.475,
+        0.0
+      ],
+      "danger_score": 0.06539795796076457,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006254792213439941,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.024138152599334717,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.16580092906951904
+      }
+    },
+    "229": {
+      "step": 229,
+      "game_state": [
+        0.42857142857142855,
+        0.03333333333333333,
+        1.4,
+        0.2733333333333333,
+        0.51,
+        0.0
+      ],
+      "danger_score": 0.08582693338394165,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.018976151943206787,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.054563045501708984,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.18394160270690918
+      }
+    },
+    "230": {
+      "step": 230,
+      "game_state": [
+        0.39285714285714285,
+        -0.005,
+        1.5333333333333334,
+        0.235,
+        0.5483333333333333,
+        0.0
+      ],
+      "danger_score": 0.15684837102890015,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.06961196660995483,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.19135808944702148,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.20957505702972412
+      }
+    },
+    "231": {
+      "step": 231,
+      "game_state": [
+        0.35714285714285715,
+        -0.04666666666666667,
+        1.6666666666666667,
+        0.19333333333333333,
+        0.59,
+        0.0
+      ],
+      "danger_score": 0.2867783308029175,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.11087357997894287,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.45645880699157715,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2930026054382324
+      }
+    },
+    "232": {
+      "step": 232,
+      "game_state": [
+        0.32142857142857145,
+        -0.025,
+        -0.8666666666666667,
+        0.215,
+        0.5683333333333334,
+        0.0
+      ],
+      "danger_score": 0.007240136464436849,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004333019256591797,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.009357452392578125,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.026744842529296875
+      }
+    },
+    "233": {
+      "step": 233,
+      "game_state": [
+        0.2857142857142857,
+        -0.006666666666666667,
+        -0.7333333333333333,
+        0.23333333333333334,
+        0.55,
+        0.0
+      ],
+      "danger_score": 0.0024430553118387857,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0024222731590270996,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.011877179145812988,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.016784071922302246
+      }
+    },
+    "234": {
+      "step": 234,
+      "game_state": [
+        0.25,
+        0.015,
+        -0.8666666666666667,
+        0.255,
+        0.5283333333333333,
+        0.0
+      ],
+      "danger_score": 0.011048614978790283,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0012873411178588867,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.01667112112045288,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.017762064933776855
+      }
+    },
+    "235": {
+      "step": 235,
+      "game_state": [
+        0.21428571428571427,
+        0.03333333333333333,
+        -0.7333333333333333,
+        0.2733333333333333,
+        0.51,
+        0.0
+      ],
+      "danger_score": 0.009255488713582357,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.001773238182067871,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.008729696273803711,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01726353168487549
+      }
+    },
+    "236": {
+      "step": 236,
+      "game_state": [
+        0.17857142857142858,
+        0.04833333333333333,
+        -0.6,
+        0.28833333333333333,
+        0.495,
+        0.0
+      ],
+      "danger_score": 0.011035343011220297,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0023377537727355957,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.007114827632904053,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02365344762802124
+      }
+    },
+    "237": {
+      "step": 237,
+      "game_state": [
+        0.14285714285714285,
+        0.06,
+        -0.4666666666666667,
+        0.3,
+        0.48333333333333334,
+        0.0
+      ],
+      "danger_score": 0.0054380496342976885,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006653249263763428,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.004239976406097412,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.0054209232330322266
+      }
+    },
+    "238": {
+      "step": 238,
+      "game_state": [
+        0.10714285714285714,
+        0.06833333333333333,
+        -0.3333333333333333,
+        0.30833333333333335,
+        0.475,
+        0.0
+      ],
+      "danger_score": 0.006561100482940674,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0063697099685668945,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.011886239051818848,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.014166772365570068
+      }
+    },
+    "239": {
+      "step": 239,
+      "game_state": [
+        0.07142857142857142,
+        0.09,
+        -0.8666666666666667,
+        0.33,
+        0.4533333333333333,
+        0.0
+      ],
+      "danger_score": 0.01279902458190918,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006418049335479736,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0043534040451049805,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.027625620365142822
+      }
+    },
+    "240": {
+      "step": 240,
+      "game_state": [
+        0.03571428571428571,
+        0.10833333333333334,
+        -0.7333333333333333,
+        0.34833333333333333,
+        0.435,
+        0.0
+      ],
+      "danger_score": 0.012583792209625244,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005785644054412842,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0030978918075561523,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02886784076690674
+      }
+    },
+    "241": {
+      "step": 241,
+      "game_state": [
+        0.0,
+        0.12333333333333334,
+        -0.6,
+        0.36333333333333334,
+        0.42,
+        0.0
+      ],
+      "danger_score": 0.015424609184265137,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004908859729766846,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.019575774669647217,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.021789193153381348
+      }
+    },
+    "242": {
+      "step": 242,
+      "game_state": [
+        -0.03571428571428571,
+        0.135,
+        -0.4666666666666667,
+        0.375,
+        0.4083333333333333,
+        0.0
+      ],
+      "danger_score": 0.01149501403172811,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.005262017250061035,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.011491537094116211,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.01773148775100708
+      }
+    },
+    "243": {
+      "step": 243,
+      "game_state": [
+        -0.07142857142857142,
+        0.14333333333333334,
+        -0.3333333333333333,
+        0.38333333333333336,
+        0.4,
+        0.0
+      ],
+      "danger_score": 0.013718624909718832,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.010548889636993408,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.005405008792877197,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02520197629928589
+      }
+    },
+    "244": {
+      "step": 244,
+      "game_state": [
+        -0.10714285714285714,
+        0.14833333333333334,
+        -0.2,
+        0.3883333333333333,
+        0.395,
+        0.0
+      ],
+      "danger_score": 0.004587312539418538,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": -0.0007206201553344727,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0009708404541015625,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.013511717319488525
+      }
+    },
+    "245": {
+      "step": 245,
+      "game_state": [
+        -0.14285714285714285,
+        0.15,
+        -0.06666666666666667,
+        0.39,
+        0.3933333333333333,
+        0.0
+      ],
+      "danger_score": 0.01055749257405599,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.008553087711334229,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.0016682147979736328,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.024787604808807373
+      }
+    },
+    "246": {
+      "step": 246,
+      "game_state": [
+        -0.17857142857142858,
+        0.14833333333333334,
+        0.06666666666666667,
+        0.3883333333333333,
+        0.395,
+        0.0
+      ],
+      "danger_score": 0.010395526885986328,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0028592348098754883,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.004877448081970215,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02344989776611328
+      }
+    },
+    "247": {
+      "step": 247,
+      "game_state": [
+        -0.21428571428571427,
+        0.14333333333333334,
+        0.2,
+        0.38333333333333336,
+        0.4,
+        0.0
+      ],
+      "danger_score": 0.009177724520365397,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.004390716552734375,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0006158351898193359,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.02252662181854248
+      }
+    },
+    "248": {
+      "step": 248,
+      "game_state": [
+        -0.25,
+        0.135,
+        0.3333333333333333,
+        0.375,
+        0.4083333333333333,
+        0.0
+      ],
+      "danger_score": -0.003573596477508545,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.006624400615692139,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": -0.00830543041229248,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": -0.009039759635925293
+      }
+    },
+    "249": {
+      "step": 249,
+      "game_state": [
+        0.7142857142857143,
+        0.27166666666666667,
+        0.4666666666666667,
+        0.36333333333333334,
+        0.42,
+        0.0
+      ],
+      "danger_score": 0.020984490712483723,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.02087688446044922,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.009801864624023438,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.032274723052978516
+      }
+    },
+    "250": {
+      "step": 250,
+      "game_state": [
+        0.6785714285714286,
+        0.29333333333333333,
+        -0.8666666666666667,
+        0.385,
+        0.3983333333333333,
+        0.0
+      ],
+      "danger_score": 0.04911184310913086,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.034763336181640625,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.047059059143066406,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06551313400268555
+      }
+    },
+    "251": {
+      "step": 251,
+      "game_state": [
+        0.6428571428571429,
+        0.31166666666666665,
+        -0.7333333333333333,
+        0.4033333333333333,
+        0.38,
+        0.0
+      ],
+      "danger_score": 0.049652159214019775,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.03423810005187988,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0568690299987793,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.057849347591400146
+      }
+    },
+    "252": {
+      "step": 252,
+      "game_state": [
+        0.6071428571428571,
+        0.32666666666666666,
+        -0.6,
+        0.41833333333333333,
+        0.365,
+        0.0
+      ],
+      "danger_score": 0.03524921337763468,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.028731942176818848,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.04883044958114624,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.028185248374938965
+      }
+    },
+    "253": {
+      "step": 253,
+      "game_state": [
+        0.5714285714285714,
+        0.3383333333333333,
+        -0.4666666666666667,
+        0.43,
+        0.35333333333333333,
+        0.0
+      ],
+      "danger_score": 0.03388903538386027,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0352778434753418,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05187094211578369,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.014518320560455322
+      }
+    },
+    "254": {
+      "step": 254,
+      "game_state": [
+        0.5357142857142857,
+        0.3466666666666667,
+        -0.3333333333333333,
+        0.43833333333333335,
+        0.345,
+        0.0
+      ],
+      "danger_score": 0.039565821488698326,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.03874361515045166,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.05965965986251831,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.020294189453125
+      }
+    },
+    "255": {
+      "step": 255,
+      "game_state": [
+        0.5,
+        0.3516666666666667,
+        -0.2,
+        0.44333333333333336,
+        0.34,
+        0.0
+      ],
+      "danger_score": 0.055742780367533364,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.04603719711303711,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.07347750663757324,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.047713637351989746
+      }
+    },
+    "256": {
+      "step": 256,
+      "game_state": [
+        0.4642857142857143,
+        0.35333333333333333,
+        -0.06666666666666667,
+        0.445,
+        0.3383333333333333,
+        0.0
+      ],
+      "danger_score": 0.06691883007685344,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.04816889762878418,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.08540451526641846,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06718307733535767
+      }
+    },
+    "257": {
+      "step": 257,
+      "game_state": [
+        0.42857142857142855,
+        0.3516666666666667,
+        0.06666666666666667,
+        0.44333333333333336,
+        0.34,
+        0.0
+      ],
+      "danger_score": 0.07455796003341675,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.05840647220611572,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.08036261796951294,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.08490478992462158
+      }
+    },
+    "258": {
+      "step": 258,
+      "game_state": [
+        0.39285714285714285,
+        0.3466666666666667,
+        0.2,
+        0.43833333333333335,
+        0.345,
+        0.0
+      ],
+      "danger_score": 0.07860678434371948,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.058428287506103516,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.08381110429763794,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09358096122741699
+      }
+    },
+    "259": {
+      "step": 259,
+      "game_state": [
+        0.35714285714285715,
+        0.3383333333333333,
+        0.3333333333333333,
+        0.43,
+        0.35333333333333333,
+        0.0
+      ],
+      "danger_score": 0.08596086502075195,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.06615734100341797,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.09146207571029663,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.10026317834854126
+      }
+    },
+    "260": {
+      "step": 260,
+      "game_state": [
+        0.32142857142857145,
+        0.32666666666666666,
+        0.4666666666666667,
+        0.41833333333333333,
+        0.365,
+        0.0
+      ],
+      "danger_score": 0.10890883207321167,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.07471370697021484,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.10872375965118408,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.14328902959823608
+      }
+    },
+    "261": {
+      "step": 261,
+      "game_state": [
+        0.2857142857142857,
+        0.31166666666666665,
+        0.6,
+        0.4033333333333333,
+        0.38,
+        0.0
+      ],
+      "danger_score": 0.12683133284250894,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.0832129716873169,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.14172005653381348,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.15556097030639648
+      }
+    },
+    "262": {
+      "step": 262,
+      "game_state": [
+        0.25,
+        0.29333333333333333,
+        0.7333333333333333,
+        0.385,
+        0.3983333333333333,
+        0.0
+      ],
+      "danger_score": 0.13147209088007608,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.09198033809661865,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.14969348907470703,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1527424454689026
+      }
+    },
+    "263": {
+      "step": 263,
+      "game_state": [
+        0.21428571428571427,
+        0.27166666666666667,
+        0.8666666666666667,
+        0.36333333333333334,
+        0.42,
+        0.0
+      ],
+      "danger_score": 0.14943559964497885,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.10658758878707886,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.17134898900985718,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.1703702211380005
+      }
+    },
+    "264": {
+      "step": 264,
+      "game_state": [
+        0.17857142857142858,
+        0.24666666666666667,
+        1.0,
+        0.3383333333333333,
+        0.445,
+        0.0
+      ],
+      "danger_score": 0.16388434171676636,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.10964804887771606,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.18467503786087036,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.19732993841171265
+      }
+    },
+    "265": {
+      "step": 265,
+      "game_state": [
+        0.14285714285714285,
+        0.21833333333333332,
+        1.1333333333333333,
+        0.31,
+        0.47333333333333333,
+        0.0
+      ],
+      "danger_score": 0.18401362498601279,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.1251019835472107,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.18593239784240723,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.2410064935684204
+      }
+    },
+    "266": {
+      "step": 266,
+      "game_state": [
+        0.10714285714285714,
+        0.18666666666666668,
+        1.2666666666666666,
+        0.2783333333333333,
+        0.505,
+        0.0
+      ],
+      "danger_score": 0.22060642639795938,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.12664121389389038,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.24013882875442505,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.29503923654556274
+      }
+    },
+    "267": {
+      "step": 267,
+      "game_state": [
+        0.07142857142857142,
+        0.15166666666666667,
+        1.4,
+        0.24333333333333335,
+        0.54,
+        0.0
+      ],
+      "danger_score": 0.25713642438252765,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.13985282182693481,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.27070295810699463,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.36085349321365356
+      }
+    },
+    "268": {
+      "step": 268,
+      "game_state": [
+        0.03571428571428571,
+        0.11333333333333333,
+        1.5333333333333334,
+        0.205,
+        0.5783333333333334,
+        0.0
+      ],
+      "danger_score": 0.3331744869550069,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.14484131336212158,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.4487261176109314,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.4059560298919678
+      }
+    },
+    "269": {
+      "step": 269,
+      "game_state": [
+        0.0,
+        0.135,
+        -0.8666666666666667,
+        0.22666666666666666,
+        0.5566666666666666,
+        0.0
+      ],
+      "danger_score": 0.073038915793101,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.07283651828765869,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.07497859001159668,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.07130163908004761
+      }
+    },
+    "270": {
+      "step": 270,
+      "game_state": [
+        -0.03571428571428571,
+        0.15333333333333332,
+        -0.7333333333333333,
+        0.245,
+        0.5383333333333333,
+        0.0
+      ],
+      "danger_score": 0.10016973813374837,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.103945791721344,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.09966474771499634,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.09689867496490479
+      }
+    },
+    "271": {
+      "step": 271,
+      "game_state": [
+        -0.07142857142857142,
+        0.16833333333333333,
+        -0.6,
+        0.26,
+        0.5233333333333333,
+        0.0
+      ],
+      "danger_score": 0.08736220995585124,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.11551558971405029,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.07934677600860596,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06722426414489746
+      }
+    },
+    "272": {
+      "step": 272,
+      "game_state": [
+        -0.10714285714285714,
+        0.18,
+        -0.4666666666666667,
+        0.27166666666666667,
+        0.5116666666666667,
+        0.0
+      ],
+      "danger_score": 0.08170463641484578,
+      "model_scores": {
+        "value_ppo_mr_2_1_on_10_optimal_value.pth": 0.10996860265731812,
+        "value_ppo_mr_3_1.5_on_15_optimal_value.pth": 0.0652998685836792,
+        "value_ppo_mr_5_2_on_20_optimal_value.pth": 0.06984543800354004
+      }
+    }
+  },
+  "stats": {
+    "mean": 0.055224737814276205,
+    "std": 0.07576557634513731,
+    "min": -0.003573596477508545,
+    "max": 0.5373873437444369
+  }
+}

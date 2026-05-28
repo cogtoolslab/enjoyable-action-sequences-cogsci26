@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What makes an action sequence enjoyable to watch?</title>
+  <meta name="description" content="Research paper website for What makes an action sequence enjoyable to watch?, a study of how difficulty and dangerousness shape enjoyment of observed action sequences.">
+  <meta name="author" content="Jean-Pe&iuml;c Chou, Kristine Zheng, Junyi Chu, Maneesh Agrawala, Judith E. Fan">
+
+  <meta property="og:title" content="What makes an action sequence enjoyable to watch?">
+  <meta property="og:description" content="A study using procedurally generated gameplay videos to isolate factors that affect how enjoyable action sequences are to watch.">
+  <meta property="og:type" content="website">
+  <meta property="og:video" content="https://engaging-movies.s3.us-east-2.amazonaws.com/cogsci-stimuli/example.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What makes an action sequence enjoyable to watch?">
+  <meta name="twitter:description" content="A study using procedurally generated gameplay videos to isolate factors that affect how enjoyable action sequences are to watch.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <!-- <p class="venue">CogSci 2026</p> -->
+      <h1>What makes an action sequence enjoyable to watch?</h1>
+
+      <p class="authors">
+        Jean-Pe&iuml;c Chou<sup>1,*</sup>,
+        Kristine Zheng<sup>2</sup>,
+        Junyi Chu<sup>2</sup>,
+        Maneesh Agrawala<sup>1</sup>,
+        Judith E. Fan<sup>1,2</sup>
+      </p>
+
+      <div class="affiliations">
+        <p><sup>1</sup>Department of Computer Science, Stanford University</p>
+        <p><sup>2</sup>Department of Psychology, Stanford University</p>
+        <p><sup>*</sup><a href="mailto:jeanpeic@stanford.edu">jeanpeic@stanford.edu</a></p>
+      </div>
+
+      <nav class="links" aria-label="Paper resources">
+        <a href="#" aria-label="Paper link placeholder" data-placeholder-link>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M6 2h8l5 5v15H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M14 2v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M8 14h8M8 18h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          Paper
+        </a>
+        <a href="https://github.com/cogtoolslab/enjoyable-action-sequences-cogsci26">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 2.5a9.5 9.5 0 0 0-3 18.52c.48.08.65-.2.65-.46v-1.62c-2.65.58-3.2-1.12-3.2-1.12-.43-1.1-1.05-1.4-1.05-1.4-.86-.58.06-.57.06-.57.95.07 1.45.98 1.45.98.85 1.44 2.22 1.02 2.76.78.08-.61.33-1.02.6-1.26-2.12-.24-4.35-1.06-4.35-4.72 0-1.04.37-1.9.98-2.56-.1-.24-.43-1.22.09-2.53 0 0 .8-.26 2.62.98A9.1 9.1 0 0 1 12 6.27c.81 0 1.63.11 2.39.32 1.82-1.24 2.62-.98 2.62-.98.52 1.31.19 2.29.09 2.53.61.66.98 1.52.98 2.56 0 3.67-2.23 4.48-4.36 4.72.34.3.64.88.64 1.77v2.62c0 .26.17.55.66.46A9.5 9.5 0 0 0 12 2.5z" fill="currentColor"/>
+          </svg>
+          GitHub
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading">Abstract</h2>
+        <p class="abstract">
+          People often seek out ways to watch others perform complex action sequences
+          (e.g., sports). What makes some sequences more enjoyable to watch than
+          others? We generated 24 video clips of gameplay from a Flappy Bird-style
+          video game. Clips varied in difficulty (how often players succeeded on
+          average) and in moment-to-moment uncertainty (how likely the player was to
+          crash at any given step). Participants (N=864) rated each video on one of
+          three dimensions: how much they enjoyed it, how difficult the level
+          appeared, or how dangerous the player's trajectory appeared. We found that
+          participants preferred videos where the player seemed to be completing more
+          difficult obstacle courses, but dangerousness did not predict enjoyment
+          ratings. These findings show how procedurally generated stimuli can isolate
+          the factors that affect how enjoyable an action sequence is to watch.
+        </p>
+      </section>
+
+      <section aria-labelledby="example-heading">
+        <h2 id="example-heading">Example Video</h2>
+        <div class="example-layout">
+          <figure class="video-block">
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="https://engaging-movies.s3.us-east-2.amazonaws.com/cogsci-stimuli/example.mp4" type="video/mp4">
+              Your browser does not support embedded video. You can
+              <a href="https://engaging-movies.s3.us-east-2.amazonaws.com/cogsci-stimuli/example.mp4">watch the example video here</a>.
+            </video>
+          </figure>
+
+          <form class="ratings" aria-label="Example video rating questions">
+
+            <label class="rating-control">
+              <span>How much did you enjoy watching the video?</span>
+              <span class="rating-instruction">
+                Please tell us how fun it was to watch, compared to other videos
+                you might watch of someone playing this game.
+              </span>
+              <input type="range" min="0" max="100" value="50">
+            </label>
+
+            <label class="rating-control">
+              <span>How much danger did you think the player was in overall?</span>
+              <span class="rating-instruction">
+                Please think about how likely it seemed that the run could have
+                ended in a crash at any point.
+              </span>
+              <input type="range" min="0" max="100" value="50">
+            </label>
+
+            <label class="rating-control">
+              <span>How difficult did you think the obstacle course was?</span>
+              <span class="rating-instruction">
+                Please think about how likely players would be to crash on this
+                obstacle course, regardless of how well this player performed
+                this time.
+              </span>
+              <input type="range" min="0" max="100" value="50">
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <section aria-labelledby="difficulty-heading">
+        <h2 id="difficulty-heading">Map Difficulty Score</h2>
+        <p class="section-description">
+          Map difficulty estimates how likely simulated agents are to fail on an
+          obstacle course, averaged across agents with different sensorimotor
+          abilities.
+        </p>
+        <figure class="media-block difficulty-video">
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="assets/example_difficulty.mp4" type="video/mp4">
+            Your browser does not support embedded video. You can
+            <a href="assets/example_difficulty.mp4">watch the map difficulty video here</a>.
+          </video>
+        </figure>
+      </section>
+
+      <section id="danger-section" aria-labelledby="danger-heading">
+        <h2 id="danger-heading">Dangerousness Score</h2>
+        <p class="section-description">
+          Dangerousness estimates players' moment-to-moment susceptibility
+          to imminent failure, with higher scores reflecting smaller margins for
+          error along the trajectory.
+        </p>
+        <div class="danger-layout">
+          <figure class="media-block">
+            <video id="danger-video" autoplay loop muted playsinline preload="metadata">
+              <source src="assets/example_danger.mp4" type="video/mp4">
+              Your browser does not support embedded video. You can
+              <a href="assets/example_danger.mp4">watch the dangerousness video here</a>.
+            </video>
+          </figure>
+
+          <div
+            class="danger-graph"
+            id="danger-graph"
+            data-danger-json="assets/example_danger.json"
+            aria-label="Interactive graph of dangerousness over time"
+          >
+            <p class="graph-fallback">Loading dangerousness graph...</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="results-heading">
+        <h2 id="results-heading">Results</h2>
+
+        <article class="result-panel">
+          <p class="result-text">
+            Participants showed moderate agreement in enjoyment ratings across the
+            24 videos, with mean ratings ranging from 51.4 to 70.3. Enjoyment
+            varied smoothly across stimuli rather than splitting into distinct
+            groups, with disagreement expressed mainly as spread around each
+            video's mean.
+          </p>
+          <figure class="result-figure">
+            <img
+              src="results/figure-2.png"
+              alt="Figure 2: Distribution of enjoyment ratings"
+              loading="lazy"
+            >
+          </figure>
+        </article>
+
+        <article class="result-panel">
+          <p class="result-text">
+            Dangerousness and map difficulty ratings closely tracked
+            model-based estimates from agent simulations (r = 0.79 and r = 0.64).
+            Difficulty judgments were also associated with dangerousness, suggesting
+            that viewers used both obstacle layout and trajectory-level cues when
+            judging how hard a course appeared.
+          </p>
+          <figure class="result-figure">
+            <img
+              src="results/figure-3.png"
+              alt="Figure 3: Ratings and model-based estimates"
+              loading="lazy"
+            >
+          </figure>
+        </article>
+
+        <article class="result-panel">
+          <p class="result-text">
+            Videos rated as more difficult were also rated as more enjoyable
+            (r = 0.68), whereas dangerousness showed no consistent relationship
+            with enjoyment. Mixed-effects models indicate that difficulty
+            ratings account for much of the explainable variance in enjoyment,
+            while dangerousness does not add significant predictive power.
+          </p>
+          <figure class="result-figure">
+            <img
+              src="results/figure-4.png"
+              alt="Figure 4: Enjoyment ratings and model fits"
+              loading="lazy"
+            >
+          </figure>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

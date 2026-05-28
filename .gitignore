@@ -161,8 +161,14 @@ venv.bak/
 
 /videos
 *.mp4
+!docs/assets/**/*.mp4
+
 stimuli/generation_pipeline/outputs/**
 !stimuli/generation_pipeline/outputs/**/
 !stimuli/generation_pipeline/outputs/**/*.csv
 !stimuli/generation_pipeline/outputs/**/*.json
 !stimuli/generation_pipeline/outputs/**/*.pdf
+stimuli/generation_pipeline/outputs/trajectory_example.json
+
+stimuli/generation_pipeline/00_website_score_danger.py
+stimuli/generation_pipeline/00_website_score_difficulty.py
