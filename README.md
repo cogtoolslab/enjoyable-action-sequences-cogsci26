@@ -1,13 +1,11 @@
 # Enjoyable Action Sequences
 
-This repository contains the stimulus-generation code, browser experiment, and analysis notebooks for our study on what makes action sequences enjoyable to watch. The project uses short Flappy Bird-style gameplay videos as controlled stimuli and asks participants to judge how enjoyable, dangerous, or difficult those trajectories appear.
+This repository contains the stimulus-generation code, experiment, and analysis notebooks for our study on what makes action sequences enjoyable to watch. The project uses short Flappy Bird-style gameplay videos as controlled stimuli and asks participants to judge how enjoyable, dangerous, or difficult those trajectories appear.
 
 At a high level, the experiment tests how enjoyment relates to two computationally defined properties of a trajectory:
 
 - `dangerousness`: how close the observed path comes to failure or risky states.
 - `difficulty`: how hard the same map is for trained agents to complete.
-
-The study separates properties of the player's movement from properties of the environment by generating many map variants around selected seed trajectories, scoring those variants, and then selecting videos that span low/high dangerousness and low/high difficulty conditions.
 
 ## Method Overview
 
