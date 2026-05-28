@@ -7,14 +7,6 @@ At a high level, the experiment tests how enjoyment relates to two computational
 - `dangerousness`: how close the observed path comes to failure or risky states.
 - `difficulty`: how hard the same map is for trained agents to complete.
 
-## Method Overview
-
-The workflow has three main parts:
-
-1. Create stimulus sets by selecting seed trajectories, generating map variants, scoring each map for dangerousness and difficulty, and rendering selected trajectories as videos.
-2. Run a web-based watch-and-rate experiment in which participants view short gameplay videos, provide slider ratings, make pairwise comparisons, and complete an exit survey.
-3. Analyze the data (perceived enjoyment, dangerousness, and difficulty) and relate those judgments to the computational stimulus scores reported in the paper.
-
 ## Repo Structure
 
 - `stimuli/`: stimulus construction, upload notebooks, and the Flappy Bird stimulus-generation pipeline.
