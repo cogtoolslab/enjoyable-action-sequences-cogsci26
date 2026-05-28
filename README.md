@@ -1,4 +1,4 @@
-# Enjoyable Action Sequences
+# What makes anaction sequence enjoyable to watch?
 
 This repository contains the stimulus-generation code, experiment, and analysis notebooks for our study on what makes action sequences enjoyable to watch. The project uses short Flappy Bird-style gameplay videos as controlled stimuli and asks participants to judge how enjoyable, dangerous, or difficult those trajectories appear.
 
