@@ -4,12 +4,13 @@ This folder contains the code used to generate, score, select, and render Flappy
 
 The workflow is:
 
-1. Record many seed trajectories from a trained agent.
+1. Generate many seed trajectories from some trained agent.
 2. Inspect those trajectories and choose representative high- and low-amplitude seeds.
 3. Generate many map variants from each selected seed.
-4. Score each map for difficulty and danger.
-5. Select extreme danger/difficulty stimuli.
-6. Render the selected trajectories as videos.
+4. Score each map for difficulty
+5. Score each trajectory for danger.
+6. Select extreme danger/difficulty stimuli.
+7. Render the selected trajectories as videos.
 
 PPO models can be trained with `models/main_ppo.py` and then used by the generation scripts below.
 
