@@ -33,14 +33,11 @@ def extract_model_state_dict(checkpoint: Dict[str, Any]) -> Dict[str, torch.Tens
 
     Supports multiple conventions:
     - 'model_state_dict' (PPO in agents/)
-    - 'network_state_dict' (PPO in follow/)
     - raw dict treated as state dict (very old saves)
     """
     if isinstance(checkpoint, dict):
         if "model_state_dict" in checkpoint:
             return checkpoint["model_state_dict"]
-        if "network_state_dict" in checkpoint:
-            return checkpoint["network_state_dict"]
         # Some saves may put tensors at the top-level
         # Detect by checking for any tensor values
         any_tensor_values = any(hasattr(v, 'shape') for v in checkpoint.values())
@@ -56,12 +53,7 @@ def _is_ppo_checkpoint(checkpoint: Dict[str, Any], model_state_dict: Dict[str, A
             has_fc1 = "fc1.weight" in model_state_dict  # PPO in agents/
             has_actor = any(k.startswith("actor.") for k in model_state_dict.keys())
             has_critic = any(k.startswith("critic.") for k in model_state_dict.keys())
-            # PPO in follow/ uses actor_head/critic_head/shared_layers naming
-            has_follow_heads = any(k.startswith("actor_head.") for k in model_state_dict.keys()) and any(
-                k.startswith("critic_head.") for k in model_state_dict.keys()
-            )
-            has_shared0 = any(k.endswith("shared_layers.0.weight") or k == "shared_layers.0.weight" for k in model_state_dict.keys())
-            if has_fc1 or (has_actor and has_critic) or has_follow_heads or has_shared0:
+            if has_fc1 or (has_actor and has_critic):
                 return True
         if isinstance(checkpoint, dict):
             hp = checkpoint.get("hparams", {})
@@ -86,9 +78,6 @@ def detect_state_size_from_msd(model_state_dict: Dict[str, Any]) -> int:
         return 5
     if "fc1.weight" in model_state_dict:  # PPO ActorCritic in agents/
         return int(model_state_dict["fc1.weight"].shape[1])
-    # PPO in follow/ PPONetwork shared_layers.0.weight
-    if "shared_layers.0.weight" in model_state_dict:
-        return int(model_state_dict["shared_layers.0.weight"].shape[1])
     return 5
 
 
@@ -98,14 +87,13 @@ def get_model_config(model_path: str) -> Dict[str, Any]:
     Returns a dict with keys:
     - model_type: 'ppo'
     - state_size: int (3 or 5 typically)
-    - simple: False, retained for compatibility with existing metadata fields
     """
     checkpoint = safe_torch_load(model_path, map_location="cpu", weights_only=False)
     msd = extract_model_state_dict(checkpoint)
     model_type = detect_agent_type_from_checkpoint(checkpoint)
     state_size = detect_state_size_from_msd(msd)
     if model_type == "ppo":
-        return {"model_type": "ppo", "state_size": state_size, "simple": False}
+        return {"model_type": "ppo", "state_size": state_size}
     raise ValueError(f"Unsupported model type: {model_type}")
 
 
@@ -124,11 +112,8 @@ def instantiate_agent(model_path: str, device: str = "cpu", verbose: bool = Fals
             project_root = os.path.dirname(os.path.abspath(__file__))
             project_root = os.path.dirname(project_root)
             candidate_models = os.path.join(project_root, 'models', os.path.basename(model_path))
-            candidate_follow = os.path.join(project_root, 'follow', 'models', os.path.basename(model_path))
             if os.path.exists(candidate_models):
                 resolved_path = candidate_models
-            elif os.path.exists(candidate_follow):
-                resolved_path = candidate_follow
     except Exception:
         pass
 
@@ -136,44 +121,12 @@ def instantiate_agent(model_path: str, device: str = "cpu", verbose: bool = Fals
     model_type = cfg.get("model_type", "ppo")
     state_size = int(cfg.get("state_size", 5))
     if model_type == "ppo":
-        # Try standard PPO agent (agents/ppo_agent)
-        try:
-            agent = PPO_agent(device=device, state_size=state_size, verbose=verbose)
-            loaded = agent.load_model(resolved_path)
-            # Some loaders return bool; if False, attempt follow PPO next
-            if loaded is False:
-                raise RuntimeError("agents.PPO_agent refused checkpoint (likely follow PPO)")
-            agent.model.eval()
-            return agent, cfg
-        except Exception:
-            # Fallback to follow PPO agent and wrap with a minimal eval adapter
-            try:
-                from follow.follow_agents.ppo_agent import PPOAgent as FollowPPOAgent  # type: ignore
-                follow_agent = FollowPPOAgent(state_size=state_size, device=device)
-                follow_agent.load_model(resolved_path)
-
-                class FollowPPOEvalAdapter:
-                    def __init__(self, core):
-                        self.core = core
-                        try:
-                            self.state_size = int(core.get_input_state_size())
-                        except Exception:
-                            self.state_size = int(getattr(core, 'state_size', state_size))
-                        self.device = getattr(core, 'device', device)
-
-                    def get_q_values(self, state):
-                        import torch
-                        s = align_state_to_size(state, self.state_size)
-                        with torch.no_grad():
-                            st = torch.tensor(s, dtype=torch.float32, device=self.device).unsqueeze(0)
-                            logits, _value = self.core.network(st)
-                            return logits.squeeze(0).detach().cpu().numpy()
-
-                adapter = FollowPPOEvalAdapter(follow_agent)
-                return adapter, {**cfg, "model_type": "ppo", "state_size": adapter.state_size}
-            except Exception as e:
-                # Re-raise the original error context for visibility
-                raise e
+        agent = PPO_agent(device=device, state_size=state_size, verbose=verbose)
+        loaded = agent.load_model(resolved_path)
+        if loaded is False:
+            raise RuntimeError(f"PPO agent refused checkpoint: {resolved_path}")
+        agent.model.eval()
+        return agent, cfg
     raise ValueError(f"Unsupported model type: {model_type}")
 
 

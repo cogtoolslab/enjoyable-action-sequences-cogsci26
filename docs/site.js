@@ -1,11 +1,3 @@
-const placeholderLinks = document.querySelectorAll('[data-placeholder-link]');
-
-placeholderLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-  });
-});
-
 const dangerVideo = document.querySelector('#danger-video');
 const dangerGraph = document.querySelector('#danger-graph');
 const dangerSection = document.querySelector('#danger-section');

@@ -20,10 +20,7 @@ class _FilterStderr:
     def flush(self): sys.__stderr__.flush()
 sys.stderr = _FilterStderr()
 import torch
-import json
-from datetime import datetime
 from agents import ppo_agent
-import copy
 
 ASSET_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'assets')
 
@@ -50,7 +47,7 @@ Main game class which is running and controlling the game
 """
 class Game:
     
-    def __init__(self, agent_name, device, model_path=None, action_fail_probability=0.0, sticky_keys=0, state_size=5, verbose=True, simple=False, seed=None, motor_response=None, obs_noise_std=0.0, obs_noise_horizontal_ratio=0.0, damage_mode=False, damage_target_pipes=10):
+    def __init__(self, agent_name, device, model_path=None, action_fail_probability=0.0, sticky_keys=0, state_size=5, verbose=True, seed=None, motor_response=None, obs_noise_std=0.0, obs_noise_horizontal_ratio=0.0, damage_mode=False, damage_target_pipes=10):
 
         #Initialize agent
         if not agent_name in AGENTS: sys.exit("Agent not defined")
@@ -322,9 +319,6 @@ class Game:
         #Gamestate passing to the agent: 1-horizontal distance to next pipe, 2-vertical distance to lower next pipe, 3-bird speed, 4-distance to ground, 5-distance to ceiling
         for pipe in self.pipes:
             if vars(self.bird)["pos"][0] - BIRD_WIDTH < vars(pipe)["pos"][0]: #Check which pipe is the next one
-                # [LEGACY]
-                # state.append((- vars(self.bird)["pos"][0] + vars(pipe)["pos"][2] + vars(pipe)["pos"][0]) / PIPE_DISTANCE)
-                # [NEW]
                 horizontal_distance = vars(pipe)["pos"][0] - vars(self.bird)["pos"][0] - BIRD_WIDTH
                 # print('horizontal distance:', horizontal_distance)
                 
@@ -341,10 +335,6 @@ class Game:
                 state.append(horizontal_distance)
                 
                 ### Calculate vertical distance to lower next pipe
-                # [LEGACY]
-                # pipe_height_distance = (vars(pipe)["pos"][1] - PIPE_GAP/2 - vars(self.bird)["pos"][1] - vars(self.bird)["pos"][3] / 2) / SCREEN_HEIGHT * 2
-                
-                # [NEW]
                 pipe_height_distance = vars(pipe)["pos"][1] - vars(self.bird)["pos"][1] - BIRD_HEIGHT
                 # print('pipe height distance:', pipe_height_distance)
                 # 
@@ -372,76 +362,8 @@ class Game:
         return state
 
     def reward(self, action=0):
-
-        reward = 0.1 #reward of 0.05 for surviving
-
-        #########################################################
-        ### SPEED REWARD
-        #########################################################
-        
-        # reward_speed = 0.2 * (max((abs(vars(self.bird)["speed"]) - 15), 0)/15)**2
-        # if reward_speed > 0:
-        #     print('reward speed:', reward_speed)
-        # reward += reward_speed
-        
-        #########################################################
-        ### REWARD FOR GETTING CLOSE TO THE BOTTOM PIPE
-        #########################################################
-
-        # horizontal_distance = vars(self.pipes[0])["pos"][0] - vars(self.bird)["pos"][0] - BIRD_WIDTH
-        # if horizontal_distance <= - BIRD_WIDTH / 2 and horizontal_distance >= - PIPE_WIDHT - BIRD_WIDTH / 2:
-        #     vertical_distance = vars(self.pipes[0])["pos"][1] - vars(self.bird)["pos"][1] - BIRD_HEIGHT
-        #     # reward_bottom_pipe = np.exp(-vertical_distance / BIRD_HEIGHT) / 10
-        #     reward_bottom_pipe = - vertical_distance / (BIRD_HEIGHT * 5)
-        #     reward_bottom_pipe = 0.1 * (vars(self.bird)["pos"][1] - (vars(self.pipes[0])["pos"][1] - PIPE_GAP)) / PIPE_GAP
-
-        #     reward += reward_bottom_pipe
-        
-        # reward_ground = 0.1 * vars(self.bird)["pos"][1] / SCREEN_HEIGHT
-        # reward += reward_ground
-
-        #########################################################
-        ### REWARD FOR GETTING CLOSE TO THE TOP PIPE
-        #########################################################
-
-        # reward = 0.0
-        # horizontal_distance = vars(self.pipes[0])["pos"][0] - vars(self.bird)["pos"][0] - BIRD_WIDTH
-        # print('horizontal distance:', horizontal_distance)
-        # if horizontal_distance <= - BIRD_WIDTH / 4 and horizontal_distance >= - PIPE_WIDHT - BIRD_WIDTH / 4 :
-            # vertical_distance = vars(self.bird)["pos"][1] - vars(self.pipes[0])["pos"][1] + PIPE_GAP
-            # reward_top_pipe = 1.0 * ((PIPE_GAP - vertical_distance) / PIPE_GAP) ** 4
-
-            # print('horizontal distance:', horizontal_distance)
-            # print('vertical distance:', vertical_distance)
-            # print('reward top pipe:', ((PIPE_GAP - vertical_distance) / PIPE_GAP) ** 4)
-            # print()
-            
-
-            # print('bird y:', vars(self.bird)["pos"][1])
-            # print('pipe y:', vars(self.pipes[0])["pos"][1])
-            # print('vertical distance:', vars(self.bird)["pos"][1] - vars(self.pipes[0])["pos"][1] + PIPE_GAP)
-            # print('reward top pipe:', reward_top_pipe)
-            # print('--------------------------------')
-            # reward += reward_top_pipe
-
-        # Small reward for jumping
-        # if action == 1:
-        #     reward += 0.2
-
-        # Limit the speed
-        # reward_speed = 0.2 * (max((abs(vars(self.bird)["speed"]) - 15), 0)/12)**2
-        # reward -= reward_speed
-
-        # distance_to_top = vars(self.bird)["pos"][1]
-        # reward_top = 0.1 * (SCREEN_HEIGHT - distance_to_top) / SCREEN_HEIGHT
-        # reward_top = 0.1 * ((SCREEN_HEIGHT - distance_to_top) / SCREEN_HEIGHT) ** 4
-        # print('reward top:', (SCREEN_HEIGHT - distance_to_top) / SCREEN_HEIGHT)
-        # reward += reward_top
-
-        # if self.collision():
-        #     reward = -1 #reward -10 for colliding
-
-        return round(reward,4)
+        reward = 0.1
+        return round(reward, 4)
 
     def set_seed(self, seed):
         """Set or change the random seed for reproducible level generation"""
@@ -468,7 +390,7 @@ class Game:
             # Seed sticky keys RNG  
             self._rng_sticky = np.random.default_rng(limitations_seed + 3)
 
-    def main(self, draw, draw_value=False, save_values=False, max_score=200, track_rewards=False): 
+    def main(self, draw, max_score=200, track_rewards=False):
 
         #Initialize pygame screen if wanted
         if draw:
@@ -477,10 +399,6 @@ class Game:
             pygame.display.set_icon(bird_image)
             pygame.display.set_caption('Flappy Bird')
             clock = pygame.time.Clock()
-            
-            # Initialize font for Q-value display
-            if draw_value:
-                font = pygame.font.Font(None, 36)
 
         #Initialize game
         active_episode = True
@@ -489,18 +407,6 @@ class Game:
         # Initialize reward tracking for evaluation
         if track_rewards:
             self.tracked_rewards = []
-        
-        # Initialize data collection for saving values
-        if save_values:
-            values_data = {
-                'episode_data': [],
-                'metadata': {
-                    'agent_type': type(self.agent).__name__,
-                    'timestamp': datetime.now().isoformat(),
-                    'device': self.device if hasattr(self, 'device') else 'unknown'
-                }
-            }
-            step_count = 0
 
         #Game loop
         while active_episode:
@@ -655,156 +561,3 @@ class Game:
             return self.damage_taken
         
         return self.score
-
-        
-    def train_agent(self, *args, **kwargs):
-        """Training is not part of the stimuli-generation pipeline.
-
-        This codebase now supports PPO inference only; checkpoints should be
-        trained outside this trimmed pipeline and placed in models/.
-        """
-        raise NotImplementedError("Training is not supported in this PPO-only generation pipeline.")
-
-    def _test_and_save_best_model(self, best_model_state, latest_model_state, batches, save_path, best_model_episodes, latest_model_episode, best_mean_score, use_training_limitations=True):
-        """Test both models and save the better one"""
-        if self.verbose:
-            print("\n" + "="*60)
-            print("MODEL COMPARISON")
-            print("="*60)
-            
-            # Print model information
-            if best_model_episodes:
-                episode_number = best_model_episodes[0]
-                print(f"Best model so far: Achieved mean score of {best_mean_score:.2f} at episode {episode_number}")
-            else:
-                print("Best model so far: No episodes tracked")
-                
-            print(f"Latest model: From episode {latest_model_episode}")
-            print("-" * 60)
-        
-        # Test both models
-        best_mean, _ = self._test_model(best_model_state, 50, "Best model so far", use_training_limitations)
-        latest_mean, _ = self._test_model(latest_model_state, 50, "Latest model", use_training_limitations)
-        
-        if self.verbose:
-            print("-" * 60)
-            # Save the better model
-            if best_mean >= latest_mean:
-                self._load_and_save_model(best_model_state, save_path, best_mean, "best model so far")
-                print(f"✅ Selected: Best model so far (episode {best_model_episodes[0]})")
-            else:
-                self._load_and_save_model(latest_model_state, save_path, latest_mean, "latest model")
-                print(f"✅ Selected: Latest model (episode {latest_model_episode})")
-            
-            print(f"Model saved to: {save_path}")
-            print("="*60)
-        else:
-            # Save the better model without verbose output
-            if best_mean >= latest_mean:
-                self._load_and_save_model(best_model_state, save_path, best_mean, "best model so far")
-            else:
-                self._load_and_save_model(latest_model_state, save_path, latest_mean, "latest model")
-
-    def _test_model(self, model_state, batches, model_name, use_training_limitations=True, verbose=True):
-        """Test a model and return (mean_score, mean_reward_per_step)"""
-        # Store original model states to restore later (deep copy for safety)
-        original_model_state = copy.deepcopy(self.agent.model.state_dict())
-        original_target_model_state = None
-        if hasattr(self.agent, 'target_model') and getattr(self.agent, 'target_model') is not None:
-            original_target_model_state = copy.deepcopy(self.agent.target_model.state_dict())
-        original_training_steps = self.agent.training_steps
-        original_train_flag = self.train
-        
-        # Load the saved model state properly
-        if isinstance(model_state, dict) and 'model_state' in model_state:
-            # New format with complete state
-            self.agent.model.load_state_dict(model_state['model_state'])
-            if 'target_model_state' in model_state and hasattr(self.agent, 'target_model') and getattr(self.agent, 'target_model') is not None:
-                self.agent.target_model.load_state_dict(model_state['target_model_state'])
-            if 'training_steps' in model_state:
-                self.agent.training_steps = model_state['training_steps']
-        else:
-            # Legacy format - only main model state available
-            # Load into main model and sync target (this breaks target network relationship)
-            self.agent.model.load_state_dict(model_state)
-            if hasattr(self.agent, 'target_model') and getattr(self.agent, 'target_model') is not None:
-                self.agent.target_model.load_state_dict(model_state)
-                print(f"  ⚠️  Warning: {model_name} using legacy format - target network sync lost")
-        
-        # Store original settings
-        original_action_fail_probability = self.action_fail_probability
-        original_sticky_keys = self.sticky_keys
-        
-        # Choose testing conditions
-        if use_training_limitations:
-            # Keep original training limitations
-            pass
-        else:
-            # Set clean testing conditions (unlimited mode)
-            self.action_fail_probability = 0.0
-            self.sticky_keys = 0
-        self.train = False
-        
-        # Track rewards across all test episodes
-        all_rewards = []
-        
-        try:
-            scores = []
-            for _ in range(batches):
-                # Run episode with reward tracking enabled
-                score = self.main(draw=False, track_rewards=True)
-                scores.append(score)
-                
-                # Collect rewards from this episode
-                if hasattr(self, 'tracked_rewards') and self.tracked_rewards:
-                    all_rewards.extend(self.tracked_rewards)
-            
-            mean_score = np.mean(scores)
-            mean_reward_per_step = np.mean(all_rewards) if all_rewards else 0.0
-            
-            if verbose:
-                print(f"{model_name}: mean score = {mean_score:.2f} (scores: {scores}), mean reward/step = {mean_reward_per_step:.4f}")
-            
-            return mean_score, mean_reward_per_step
-        finally:
-            # Restore original settings and model states
-            self.action_fail_probability = original_action_fail_probability
-            self.sticky_keys = original_sticky_keys
-            self.train = original_train_flag
-            
-            # Restore original model states
-            self.agent.model.load_state_dict(original_model_state)
-            if hasattr(self.agent, 'target_model') and original_target_model_state is not None:
-                self.agent.target_model.load_state_dict(original_target_model_state)
-            self.agent.training_steps = original_training_steps
-
-    def _load_and_save_model(self, model_state, save_path, score, model_type):
-        """Load and save a model"""
-        # Load the saved model state properly
-        if isinstance(model_state, dict) and 'model_state' in model_state:
-            # New format with complete state
-            self.agent.model.load_state_dict(model_state['model_state'])
-            if 'target_model_state' in model_state and hasattr(self.agent, 'target_model') and getattr(self.agent, 'target_model') is not None:
-                self.agent.target_model.load_state_dict(model_state['target_model_state'])
-            if 'training_steps' in model_state:
-                self.agent.training_steps = model_state['training_steps']
-        else:
-            # Legacy format - only main model state available
-            self.agent.model.load_state_dict(model_state)
-            if hasattr(self.agent, 'target_model') and getattr(self.agent, 'target_model') is not None:
-                self.agent.target_model.load_state_dict(model_state)
-        
-        self.agent.save_model(save_path)
-        if self.verbose:
-            print(f"✅ Saving {model_type} (score: {score:.2f})")
-
-    def _snapshot_agent_state(self):
-        """Create a deep copy snapshot of the agent's model (and target) state for safe testing/saving."""
-        snapshot = {
-            'model_state': copy.deepcopy(self.agent.model.state_dict()),
-            'training_steps': getattr(self.agent, 'training_steps', 0)
-        }
-        # Preserve auxiliary model state if the active PPO implementation exposes one.
-        if hasattr(self.agent, 'target_model') and getattr(self.agent, 'target_model') is not None:
-            snapshot['target_model_state'] = copy.deepcopy(self.agent.target_model.state_dict())
-        return snapshot

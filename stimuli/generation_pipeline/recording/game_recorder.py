@@ -7,8 +7,6 @@ import pygame
 import json
 import base64
 import io
-import threading
-import queue
 import time
 from datetime import datetime
 import numpy as np
@@ -40,10 +38,10 @@ class NumpyEncoder(json.JSONEncoder):
         return super(NumpyEncoder, self).default(obj)
 
 class RecorderGame(game.Game):
-    """Extended Game class that records frame data and supports interactive control."""
+    """Extended Game class that records frame data for stimuli generation."""
     
     def __init__(self, agent_name, device, model_path=None, action_fail_probability=0.0, sticky_keys=0, state_size=5, verbose=True, seed=None, stop_at_score=None, np_seed=None, motor_response=None, obs_noise_std=0.0, damage_mode=False, damage_target_pipes=10, bird_sprite_name='bird-flap-1.png'):
-        super().__init__(agent_name, device, model_path, action_fail_probability, sticky_keys, state_size, verbose, simple=False, seed=seed, motor_response=motor_response, obs_noise_std=obs_noise_std, damage_mode=damage_mode, damage_target_pipes=damage_target_pipes)
+        super().__init__(agent_name, device, model_path, action_fail_probability, sticky_keys, state_size, verbose, seed=seed, motor_response=motor_response, obs_noise_std=obs_noise_std, damage_mode=damage_mode, damage_target_pipes=damage_target_pipes)
         
         # Store custom bird sprite name
         self.bird_sprite_name = bird_sprite_name
@@ -66,13 +64,12 @@ class RecorderGame(game.Game):
                 'sticky_keys': sticky_keys,
                 'model_path': model_path,
                 'actual_state_size': getattr(self.agent, 'state_size', state_size),
-                'actual_simple': getattr(self.agent, 'simple', False),
                 'motor_response': motor_response,
                 'damage_mode': damage_mode
             }
         }
         
-        # Initialize trajectory recording for follow system
+        # Initialize trajectory recording
         self.trajectory_data = {
             'metadata': {
                 'game_seed': self.seed,
@@ -88,8 +85,6 @@ class RecorderGame(game.Game):
             'trajectory': []
         }
         
-        # Queued user input for interactive runs
-        self.action_queue = queue.Queue()
         self.current_frame = None
         self.active = False
         self.step_count = 0
@@ -125,22 +120,6 @@ class RecorderGame(game.Game):
         finally:
             # Restore original working directory
             os.chdir(original_cwd)
-    
-    def queue_action(self, action):
-        """Queue an action from an interactive controller."""
-        if not self.action_queue.full():
-            self.action_queue.put(action)
-    
-    def get_current_frame(self):
-        """Get current frame as base64 encoded image"""
-        if self.current_frame is None:
-            return None
-        
-        return self.current_frame
-    
-    def is_active(self):
-        """Check if game is currently active"""
-        return self.active
     
     def capture_frame_data(self, interpolation_factor=0.0, state=None):
         """Capture complete frame data for recording with optional interpolation"""
@@ -200,7 +179,7 @@ class RecorderGame(game.Game):
         return frame_data
     
     def capture_trajectory_step(self, action, collision=False, pre_update_state=None, pre_update_pipes=None):
-        """Capture trajectory data in the format expected by the follow system"""
+        """Capture trajectory data for downstream stimuli generation."""
         if self.trajectory_start_time is None:
             self.trajectory_start_time = time.time()
             self.trajectory_data['metadata']['recording_start_time'] = datetime.now().isoformat()
@@ -227,18 +206,6 @@ class RecorderGame(game.Game):
         if self.damage_mode:
             trajectory_step['damage_taken'] = self.damage_taken
             trajectory_step['pipes_passed'] = self.pipes_passed
-        
-        # If no pre-update pipes provided, use current pipe positions (legacy behavior)
-        if pre_update_pipes is None:
-            for pipe in self.pipes:
-                pipe_data = {
-                    'x': float(vars(pipe)["pos"][0]),
-                    'y': float(vars(pipe)["pos"][1]),
-                    'width': float(vars(pipe)["pos"][2]),
-                    'height': float(vars(pipe)["pos"][3]),
-                    'inverted': pipe.inverted
-                }
-                trajectory_step['pipes'].append(pipe_data)
         
         self.trajectory_data['trajectory'].append(trajectory_step)
         return trajectory_step
@@ -383,7 +350,7 @@ class RecorderGame(game.Game):
         
         self.current_frame = f'data:image/png;base64,{img_base64}'
     
-    def main(self, draw=False, draw_value=False, save_values=True, record_frames=True, max_score=100):
+    def main(self, draw=False, save_values=True, record_frames=True, max_score=100):
         """Main game loop with recording capabilities"""
         
         self.active = True
@@ -568,7 +535,7 @@ class RecorderGame(game.Game):
                     collision_frame['jump_cooldown_remaining'] = self.jump_cooldown_remaining
                     self.recording_data['episode_data'].append(collision_frame)
                 
-                # Capture trajectory data for follow system (with collision status and pre-update data)
+                # Capture trajectory data with collision status and pre-update data.
                 self.capture_trajectory_step(executed_action, collision=collision_occurred, 
                                            pre_update_state=state, pre_update_pipes=pre_update_pipes)
                 
@@ -649,11 +616,6 @@ class RecorderGame(game.Game):
         self.recording_data['metadata']['total_steps'] = self.step_count
         self.recording_data['metadata']['episode_completed'] = True
         
-        # Store the trajectory filename for easy linking
-        agent_type = type(self.agent).__name__.lower()
-        trajectory_filename = f"recording_{agent_type}_score{self.score}_seed{self.seed}_{self.creation_timestamp}.json"
-        self.recording_data['metadata']['trajectory_filename'] = trajectory_filename
-        
         # Use recordings directory inside the recording package
         recording_dir = os.path.dirname(os.path.abspath(__file__))
         recordings_dir = os.path.join(recording_dir, 'recordings')
@@ -662,61 +624,3 @@ class RecorderGame(game.Game):
         filename = os.path.join(recordings_dir, f'{self.game_id}.json')
         with open(filename, 'w') as f:
             json.dump(self.recording_data, f, indent=2, cls=NumpyEncoder)
-        
-        # Finalize and save trajectory data for follow system
-        self.save_trajectory()
-    
-    def save_trajectory(self):
-        """Save trajectory data in the format expected by the follow system"""
-        if self.trajectory_start_time is None:
-            print("No trajectory data recorded")
-            return
-            
-        # Finalize trajectory metadata
-        end_time = time.time()
-        duration = end_time - self.trajectory_start_time
-        
-        self.trajectory_data['metadata']['recording_end_time'] = datetime.now().isoformat()
-        self.trajectory_data['metadata']['total_steps'] = len(self.trajectory_data['trajectory'])  # Actual trajectory length
-        
-        # Handle final score based on mode
-        if self.damage_mode:
-            self.trajectory_data['metadata']['final_score'] = self.pipes_passed  # Pipes passed in damage mode
-            self.trajectory_data['metadata']['damage_taken'] = self.damage_taken
-            self.trajectory_data['metadata']['success'] = self.pipes_passed >= self.damage_target_pipes and self.damage_taken == 0  # Perfect run
-        else:
-            self.trajectory_data['metadata']['final_score'] = self.score
-            self.trajectory_data['metadata']['success'] = self.score >= 100  # Consider success if score >= 100
-        
-        self.trajectory_data['metadata']['duration_seconds'] = duration
-        
-        # Create trajectory filename using the same timestamp as the recording
-        agent_type = type(self.agent).__name__.lower()
-        trajectory_filename = f"recording_{agent_type}_score{self.score}_seed{self.seed}_{self.creation_timestamp}.json"
-        
-        # Save to follow/trajectories directory
-        recording_dir = os.path.dirname(os.path.abspath(__file__))
-        project_root = os.path.dirname(recording_dir)
-        trajectories_dir = os.path.join(project_root, 'follow', 'trajectories')
-        
-        # Create trajectories directory if it doesn't exist
-        os.makedirs(trajectories_dir, exist_ok=True)
-        
-        trajectory_path = os.path.join(trajectories_dir, trajectory_filename)
-        
-        # Save trajectory file
-        with open(trajectory_path, 'w') as f:
-            json.dump(self.trajectory_data, f, indent=2, cls=NumpyEncoder)
-    
-        return trajectory_path
-
-# Helper function to create web user agent
-class WebUserAgent:
-    """User agent that receives externally queued actions."""
-    
-    def __init__(self):
-        pass
-    
-    def act(self, state, train):
-        # Actions will be queued from an external controller
-        return 0 

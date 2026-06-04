@@ -195,12 +195,6 @@ section p + .danger-layout {
   gap: 12px;
 }
 
-.ratings-note {
-  color: var(--muted);
-  font-size: 0.98rem;
-  text-align: left;
-}
-
 .rating-control {
   display: grid;
   row-gap: 5px;

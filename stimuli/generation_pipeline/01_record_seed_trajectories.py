@@ -138,7 +138,7 @@ def create_game_instance():
             seed=0,  # Will be overridden per episode
             stop_at_score=None,  # Not used in damage mode
             np_seed=None,
-            motor_response=MOTOR_RESPONSE if agent_name == 'ppo_agent' else None,
+            motor_response=MOTOR_RESPONSE,
             obs_noise_std=OBS_NOISE_STD,
             damage_mode=True,  # Enable damage mode to continue after collisions
             damage_target_pipes=TARGET_PIPES,  # Stop at pipe pair 10
@@ -146,8 +146,6 @@ def create_game_instance():
     # Ensure evaluation mode
     if hasattr(rg, 'agent') and hasattr(rg.agent, 'model'):
         rg.agent.model.eval()
-        if hasattr(rg.agent, 'target_model') and rg.agent.target_model is not None:
-            rg.agent.target_model.eval()
     return rg
 
 def run_episode_and_get_trajectory(rg, seed=None, np_seed=None, quick_check=False):
@@ -288,8 +286,6 @@ def process_seed_attempt(args):
     # Ensure evaluation mode
     if hasattr(rg, 'agent') and hasattr(rg.agent, 'model'):
         rg.agent.model.eval()
-        if hasattr(rg.agent, 'target_model') and rg.agent.target_model is not None:
-            rg.agent.target_model.eval()
     
     try:
         # Quick check first (faster)
@@ -372,7 +368,7 @@ def collect_trajectories_for_current_model():
         'model_path': model_path,
         'agent_name': agent_name,
         'base_state_size': base_state_size,
-        'motor_response': MOTOR_RESPONSE if agent_name == 'ppo_agent' else None,
+        'motor_response': MOTOR_RESPONSE,
         'obs_noise_std': OBS_NOISE_STD,
         'target_pipes': TARGET_PIPES
     }

@@ -22,7 +22,6 @@ gs = {
     session_info: {
         gameID: undefined,
         participantID: undefined,
-        numTrials: undefined,
         questionCondition: undefined,
         agentOrderCondition: undefined,
         trajectoryPair: undefined,
@@ -43,7 +42,6 @@ gs = {
         slider_width: 500,
         require_movement: true,
     },
-    comprehensionAttempts: 0,
     prolific_info: {
         prolificPID: undefined,
         prolificStudyID: undefined,

@@ -88,9 +88,6 @@ spec4.loader.exec_module(render_visuals)
 trajectory_viz = render_visuals
 video_generation = render_visuals
 
-# Import model_utils for danger computation
-from utils.model_utils import instantiate_agent, align_state_to_size
-
 # Model configurations
 # Note: Danger analysis uses optimal_value models, map analysis uses regular models
 # We use the optimal_value models for danger, and regular models for difficulty
